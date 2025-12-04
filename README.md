@@ -2,38 +2,40 @@
 
 Each part of the project has **its own assets and style folders**.  
 
-`/project-root`
-`│`
-`├── index.html                  # Team homepage (embedded CSS only)`
-`├── assets/                     # Images used ONLY by the team homepage`
-`│`
-`├── jaber/                      # Jaber’s personal folder`
-`│   ├── index.html              # Personal homepage`
-`│   ├── career.html             # Career skills page`
-`│   ├── style/`
-`│   │   └── style.css           # External CSS for Jaber`
-`│   └── assets/                 # Images for Jaber only`
-`│`
-`├── assmaa/`
-`│   ├── index.html`
-`│   ├── career.html`
-`│   ├── style/`
-`│   │   └── style.css`
-`│   └── assets/`
-`│`
-`├── romain/`
-`│   ├── index.html`
-`│   ├── career.html`
-`│   ├── style/`
-`│   │   └── style.css`
-`│   └── assets/`
-`│`
-`└── noah/`
- `   ├── index.html`
-`    ├── career.html`
-`    ├── style/`
-`    │   └── style.css`
-`    └── assets/`
+<pre>
+/project-root
+│
+├── index.html                  # Team homepage (embedded CSS only)
+├── assets/                     # Images used ONLY by the team homepage
+│
+├── jaber/                      # Jaber’s personal folder
+│   ├── index.html              # Personal homepage
+│   ├── career.html             # Career skills page
+│   ├── style/
+│   │   └── style.css           # External CSS for Jaber
+│   └── assets/                 # Images for Jaber only
+│
+├── assmaa/
+│   ├── index.html
+│   ├── career.html
+│   ├── style/
+│   │   └── style.css
+│   └── assets/
+│
+├── romain/
+│   ├── index.html
+│   ├── career.html
+│   ├── style/
+│   │   └── style.css
+│   └── assets/
+│
+└── noah/
+    ├── index.html
+    ├── career.html
+    ├── style/
+    │   └── style.css
+    └── assets/
+</pre>
 
 ----------
 
