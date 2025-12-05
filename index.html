@@ -10,6 +10,10 @@
 			box-sizing: border-box;
 		}
 
+		h1, h2, h3, h4 {
+			font-weight: 400;
+		}
+
 		html {
 			font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 			overflow-x: hidden;
@@ -41,6 +45,49 @@
 			.blackCover {
 				background-color: rgba(0, 0, 0, 0.5);
 			}
+		}		
+
+		.ourTeam {
+			display: flex;
+			flex-direction: column;
+			gap: 40px;
+			background-color: rgb(249, 250, 251);
+			padding: 40px 0;
+
+			.members {
+				width: 100%;
+				display: flex;
+				gap: 20px;
+				flex-wrap: wrap;
+
+				.memberCard {
+					width: calc(50% - 20px);
+					box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+					padding: 40px 20px;
+					display: flex;
+					flex-direction: column;
+					gap: 20px;
+					background-color: white;
+					border-radius: 8px;
+
+					& > * {
+						margin: 0;
+					}
+
+					.memberID {
+						color: rgb(107, 114, 128);
+					}
+
+					.memberLink a {
+						color: rgb(37, 99, 235);
+						text-decoration: none;
+
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
 		}
 	</style>
 </head>
@@ -50,6 +97,32 @@
 		<h1>Introduction to Suzhou</h1>
 		<img class="fullPage" src="assets/images/bg.jpg">
 		<div class="blackCover"></div>
+	</section>
+	
+	<section class="ourTeam">
+		<h3>Our Team</h3>
+		<span class="members">
+			<span class="memberCard">
+				<span class="memberName">Noah</span>
+				<span class="memberID">Student ID: XX</span>
+				<span class="memberLink"><a href="noah/index.html">Visit Homepage →</a></span>
+			</span>
+			<span class="memberCard">
+				<span class="memberName">Noah</span>
+				<span class="memberID">Student ID: XX</span>
+				<span class="memberLink"><a href="noah/index.html">Visit Homepage →</a></span>
+			</span>
+			<span class="memberCard">
+				<span class="memberName">Noah</span>
+				<span class="memberID">Student ID: XX</span>
+				<span class="memberLink"><a href="noah/index.html">Visit Homepage →</a></span>
+			</span>
+			<span class="memberCard">
+				<span class="memberName">Noah</span>
+				<span class="memberID">Student ID: XX</span>
+				<span class="memberLink"><a href="noah/index.html">Visit Homepage →</a></span>
+			</span>
+		</span>
 	</section>
 </body>
 </html>
