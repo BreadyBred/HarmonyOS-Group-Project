@@ -9,7 +9,7 @@
 
 	<style>
 	/* HARD SKILLS */
-	section.hard-skills {
+	section.hardSkills {
 		display: flex;
 		flex-direction: column;
 		padding: 35px 150px;
@@ -24,7 +24,7 @@
 				flex-direction: column;
 				gap: 10px;
 
-				.categorised-skills {
+				.categorisedSkills {
 					display: flex;
 					flex-wrap: wrap;
 					gap: 10px;
@@ -35,7 +35,7 @@
 	/* --- */
 
 	/* SOFT SKILLS */
-	section.soft-skills {
+	section.softSkills {
 		display: flex;
 		flex-direction: column;
 		padding: 35px 150px;
@@ -50,12 +50,12 @@
 				flex-direction: column;
 				gap: 10px;
 
-				.categorised-skills {
+				.categorisedSkills {
 					display: flex;
 					flex-wrap: wrap;
 					gap: 10px;
 
-					.skill-card {
+					.skillCard {
 						padding: 10px 15px;
 						border: 1px solid var(--aux-bc);
 						border-radius: 8px;
@@ -75,12 +75,12 @@
 		flex-direction: column;
 		padding: 35px 150px;
 
-		.certificates-list {
+		.certificatesList {
 			display: flex;
 			flex-direction: column;
 			gap: 8px;
 
-			.certificate-item {
+			.certificateItem {
 				display: flex;
 				align-items: center;
 			}
@@ -90,7 +90,7 @@
 	
 	@media (max-width: 768px) {
 		/* HARD SKILLS */
-		section.hard-skills {
+		section.hardSkills {
 			padding: 15px 15px;
 
 			.skills {
@@ -99,7 +99,7 @@
 				.category {
 					gap: 5px;
 					
-					.categorised-skills {
+					.categorisedSkills {
 						gap: 5px;
 					}
 				}
@@ -108,7 +108,7 @@
 		/* --- */
 
 		/* SOFT SKILLS */
-		section.soft-skills {
+		section.softSkills {
 			padding: 15px 15px;
 
 			.skills {
@@ -117,7 +117,7 @@
 				.category {
 					gap: 5px;
 
-					.categorised-skills {
+					.categorisedSkills {
 						gap: 5px;
 					}
 				}
@@ -129,7 +129,7 @@
 		section.certificates {
 			padding: 15px 15px;
 
-			.certificates-list {
+			.certificatesList {
 				gap: 5px;
 			}
     	}
@@ -139,22 +139,22 @@
 </head>
 <body>
 	<!-- HEADER -->
-	<header class="bottom-border aux-bc">
+	<header class="bottomBorder auxBc">
 		<nav>
 			<a href="" aria-label="Back to the index">
-				<img src="assets/images/logo/logo_256.png" id="main-logo" alt="">
+				<img src="assets/images/logo/logo_256.png" id="mainLogo" alt="">
 			</a>
-			<ul class="desktop-only">
+			<ul class="desktopOnly">
 				<li class="link">
 					<a href="../index.html">
 						Team Page
-						<span class="line a-bg"></span>
+						<span class="line aBg"></span>
 					</a>
 				</li>
 				<li class="link">
 					<a href="index.html">
 						Homepage
-						<span class="line a-bg"></span>
+						<span class="line aBg"></span>
 					</a>
 				</li>
 			</ul>
@@ -167,55 +167,55 @@
 	</p>
 
 	<!-- SOFT SKILLS -->
-	<section class="soft-skills" id="soft-skills">
-		<span class="section-title">
+	<section class="softSkills" id="softSkills">
+		<span class="sectionTitle">
 			<h2 class="title">Soft skills</h2>
-			<span class="v-line a-bg">&nbsp;</span>
+			<span class="vLine aBg">&nbsp;</span>
 		</span>
 		<p style="color:#F0FFF0; font-size:1.05rem; line-height:1.6;">
 			These soft skills reflect how I work in teams and adapt to challenges.
 		</p>
 		<span class="skills">
 			<span class="category">
-				<span class="category-title">Communication & Teamwork</span>
-				<span class="categorised-skills">
-					<span class="skill-card">Clear communication</span>
-					<span class="skill-card">Team collaboration</span>
-					<span class="skill-card">Cross-cultural adaptability</span>
+				<span class="categoryTitle">Communication & Teamwork</span>
+				<span class="categorisedSkills">
+					<span class="skillCard">Clear communication</span>
+					<span class="skillCard">Team collaboration</span>
+					<span class="skillCard">Cross-cultural adaptability</span>
 				</span>
 			</span>
 
 			<span class="category">
-				<span class="category-title">Problem-Solving</span>
-				<span class="categorised-skills">
-					<span class="skill-card">Analytical thinking</span>
-					<span class="skill-card">Troubleshooting</span>
-					<span class="skill-card">Creative solutions</span>
+				<span class="categoryTitle">Problem-Solving</span>
+				<span class="categorisedSkills">
+					<span class="skillCard">Analytical thinking</span>
+					<span class="skillCard">Troubleshooting</span>
+					<span class="skillCard">Creative solutions</span>
 				</span>
 			</span>
 
 			<span class="category">
-				<span class="category-title">Work Ethic</span>
-				<span class="categorised-skills">
-					<span class="skill-card">Autonomy</span>
-					<span class="skill-card">Reliability</span>
-					<span class="skill-card">Time management</span>
+				<span class="categoryTitle">Work Ethic</span>
+				<span class="categorisedSkills">
+					<span class="skillCard">Autonomy</span>
+					<span class="skillCard">Reliability</span>
+					<span class="skillCard">Time management</span>
 				</span>
 			</span>
 		</span>
 	</section>
 	
 	<!-- HARD SKILLS -->
-	<section class="hard-skills" id="hard-skills">
-		<span class="section-title">
+	<section class="hardSkills" id="hardSkills">
+		<span class="sectionTitle">
 			<h2 class="title">Hard skills</h2>
-			<span class="v-line a-bg">&nbsp;</span>
+			<span class="vLine aBg">&nbsp;</span>
 		</span>
 
 		<span class="skills">	
 			<span class="category">
-				<span class="category-title">Web Development</span>
-				<span class="categorised-skills">
+				<span class="categoryTitle">Web Development</span>
+				<span class="categorisedSkills">
 					<img class="skill" src="https:/img.shields.io/badge/HTML5-%23508AA8?style=for-the-badge&amp;logo=HTML5&amp;logoColor=F0F3BD" alt="HTML5">
 					<img class="skill" src="https:/img.shields.io/badge/CSS-%23508AA8?style=for-the-badge&amp;logo=CSS&amp;logoColor=F0F3BD" alt="CSS3">
 					<img class="skill" src="https:/img.shields.io/badge/Tailwind-%23508AA8?style=for-the-badge&amp;logo=TailwindCSS&amp;logoColor=F0F3BD" alt="Tailwind">
@@ -237,8 +237,8 @@
 				</span>
 			</span>
 			<span class="category">
-				<span class="category-title">Software Engineering</span>
-				<span class="categorised-skills">
+				<span class="categoryTitle">Software Engineering</span>
+				<span class="categorisedSkills">
 					<img class="skill" src="https:/img.shields.io/badge/C%23-%23508AA8?style=for-the-badge&amp;logo=Unity&amp;logoColor=F0F3BD" alt="C Sharp">
 					<img class="skill" src="https:/img.shields.io/badge/C-%23508AA8?style=for-the-badge&amp;logo=C&amp;logoColor=F0F3BD" alt="C">
 					<img class="skill" src="https:/img.shields.io/badge/Python-%23508AA8?style=for-the-badge&amp;logo=Python&amp;logoColor=F0F3BD" alt="Python">
@@ -254,8 +254,8 @@
 				</span>
 			</span>
 			<span class="category">
-				<span class="category-title">AI/Data</span>
-				<span class="categorised-skills">
+				<span class="categoryTitle">AI/Data</span>
+				<span class="categorisedSkills">
 					<img class="skill" src="https:/img.shields.io/badge/NumPy-%23508AA8?style=for-the-badge&amp;logo=NumPy&amp;logoColor=F0F3BD" alt="NumPy">
 					<img class="skill" src="https:/img.shields.io/badge/Pandas-%23508AA8?style=for-the-badge&amp;logo=Pandas&amp;logoColor=F0F3BD" alt="Pandas">
 					<img class="skill" src="https:/img.shields.io/badge/scikit--learn-%23508AA8?style=for-the-badge&amp;logo=scikit-learn&amp;logoColor=F0F3BD" alt="Scikit-learn">
@@ -263,8 +263,8 @@
 				</span>
 			</span>
 			<span class="category">
-				<span class="category-title">CMS</span>
-				<span class="categorised-skills">
+				<span class="categoryTitle">CMS</span>
+				<span class="categorisedSkills">
 					<img class="skill" src="https:/img.shields.io/badge/Wordpress-%23508AA8?style=for-the-badge&amp;logo=Wordpress&amp;logoColor=F0F3BD" alt="Wordpress">
 					<img class="skill" src="https:/img.shields.io/badge/Shopify-%23508AA8?style=for-the-badge&amp;logo=Shopify&amp;logoColor=F0F3BD" alt="Shopify">
 					<img class="skill" src="https:/img.shields.io/badge/Prestashop-%23508AA8?style=for-the-badge&amp;logo=Prestashop&amp;logoColor=F0F3BD" alt="Prestashop">
@@ -272,8 +272,8 @@
 				</span>
 			</span>
 			<span class="category">
-				<span class="category-title">Design</span>
-				<span class="categorised-skills">
+				<span class="categoryTitle">Design</span>
+				<span class="categorisedSkills">
 					<img class="skill" src="https:/img.shields.io/badge/Figma-%23508AA8?style=for-the-badge&amp;logo=Figma&amp;logoColor=F0F3BD" alt="Figma">
 					<img class="skill" src="https:/img.shields.io/badge/Photoshop-%23508AA8?style=for-the-badge&amp;logo=Photoshop&amp;logoColor=F0F3BD" alt="Photoshop">
 					<img class="skill" src="https:/img.shields.io/badge/Illustrator-%23508AA8?style=for-the-badge&amp;logo=Illustrator&amp;logoColor=F0F3BD" alt="Illustrator">
@@ -286,32 +286,29 @@
 
 	<!-- CERTIFICATES -->
 	<section class="certificates">
-		<span class="section-title">
+		<span class="sectionTitle">
 			<h2 class="title">Certificates</h2>
-			<span class="v-line a-bg">&nbsp;</span>
+			<span class="vLine aBg">&nbsp;</span>
 		</span>
 		<p style="color:#F0FFF0; font-size:1.05rem; line-height:1.6;">
 			Below are the certifications I obtained to strengthen my professional profile.
 		</p>
-		<span class="certificates-list">
-			<span class="certificate-item content-with-image-or-link">
-				- <a href="assets/files/IELTS.pdf" target="_blank" class="underlined"
-				aria-label="See the IELTS certificate">IELTS</a> : Score 7.5, CEFR C1 (2025)
+		<span class="certificatesList">
+			<span class="certificateItem contentWithImageOrLink">
+				- <a href="assets/files/IELTS.pdf" target="_blank" class="underlined" aria-label="See the IELTS certificate">IELTS</a> : Score 7.5, CEFR C1 (2025)
 			</span>
 
-			<span class="certificate-item content-with-image-or-link">
-				- <a href="https:/cert.efset.org/3xzcDP" target="_blank" class="underlined"
-				aria-label="See the EFSET certificate">EFSET</a> : Level C1/C2 (2025)
+			<span class="certificateItem contentWithImageOrLink">
+				- <a href="https:/cert.efset.org/3xzcDP" target="_blank" class="underlined" aria-label="See the EFSET certificate">EFSET</a> : Level C1/C2 (2025)
 			</span>
 
-			<span class="certificate-item content-with-image-or-link">
-				- <a href="assets/files/Certificat_Opquast.pdf" target="_blank" class="underlined"
-				aria-label="See the Opquast certificate">Opquast</a> : 825 / 1000 (2024)
+			<span class="certificateItem contentWithImageOrLink">
+				- <a href="assets/files/Certificat_Opquast.pdf" target="_blank" class="underlined" aria-label="See the Opquast certificate">Opquast</a> : 825 / 1000 (2024)
 			</span>
 		</span>
 	</section>
 
 	<!-- FOOTER -->
-	<footer class="top-border aux-bc"><span>Romain GERARD © 2025</span></footer>
+	<footer class="topBorder auxBc"><span>Romain GERARD © 2025</span></footer>
 </body>
 </html>
