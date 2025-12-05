@@ -16,7 +16,6 @@
 
 		html {
 			font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-			overflow-x: hidden;
 		}
 
 		section:not(.introduction) {
@@ -25,7 +24,6 @@
 
 		.introduction {
 			height: 100vh;
-			width: 100vw;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -40,6 +38,7 @@
 				width: 100%;
 				height: 100%;
 				z-index: -1;
+				object-fit: cover;
 			}
 
 			.blackCover {
@@ -196,10 +195,134 @@
 			hr {
 				color: #1e2939;
 				width: 70%;
+				height: 1px;
+				border: solid 1px #1e2939;
 			}
 
 			.copyright {
 				color: rgb(156, 163, 175);
+			}
+		}
+
+		@media (max-width: 1024px) and (min-width: 769px) {
+			section:not(.introduction) {
+				width: 80%;
+			}
+
+			.introduction {
+				padding: 100px 40px;
+				text-align: center;
+
+				h1 {
+					font-size: 2.2rem;
+				}
+
+				h2 {
+					font-size: 1.3rem;
+				}
+			}
+
+			.ourTeam {
+				.members {
+					gap: 30px;
+
+					.memberCard {
+						width: calc(50% - 15px);
+						padding: 30px 20px;
+					}
+				}
+			}
+
+			.about {
+				.block {
+					grid-template-columns: 1fr 1fr;
+					gap: 30px;
+
+					img {
+						width: 90%;
+						height: 230px;
+					}
+				}
+			}
+
+			.explore {
+				.pictureDisplay {
+					a {
+						width: calc(33.33% - 12px);
+					}
+				}
+			}
+
+			footer {
+				ul {
+					gap: 20px;
+				}
+			}
+		}
+
+		@media (max-width: 768px) {
+			section:not(.introduction) {
+				width: 90%;
+			}
+
+			.introduction {
+				padding: 80px 20px;
+				text-align: center;
+
+				h1 {
+					font-size: 1.8rem;
+				}
+
+				h2 {
+					font-size: 1.2rem;
+				}
+			}
+
+			.ourTeam {
+				.members {
+					flex-direction: column;
+
+					.memberCard {
+						width: 100% !important;
+					}
+				}
+			}
+
+			.about {
+				.block {
+					grid-template-columns: 1fr !important;
+					gap: 25px;
+					text-align: left;
+
+					img {
+						width: 100% !important;
+						height: 220px;
+						justify-self: normal !important;
+						order: 2;
+					}
+
+					.description {
+						order: 1;
+					}
+				}
+			}
+
+			.explore {
+				.pictureDisplay {
+							a {
+						width: calc(50% - 10px);
+					}
+				}
+			}
+
+			footer {
+				.links {
+					ul {
+						flex-direction: column;
+						gap: 15px;
+						padding: 0;
+					}
+				}
 			}
 		}
 	</style>
