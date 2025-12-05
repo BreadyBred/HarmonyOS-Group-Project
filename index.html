@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Team 11 - Group Page</title>
 	<style>
-		* {
+		*:not(h4) {
 			margin: 0 auto;
 			box-sizing: border-box;
 		}
@@ -17,10 +17,6 @@
 		html {
 			font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 			background-color: rgb(249, 250, 251);
-		}
-
-		section:not(.introduction) {
-			width: 60%;
 		}
 
 		.introduction {
@@ -39,6 +35,9 @@
 				width: 100%;
 				height: 100%;
 				z-index: -1;
+			}
+
+			img {
 				object-fit: cover;
 			}
 
@@ -56,13 +55,10 @@
 			.members {
 				width: 100%;
 				display: flex;
-				gap: 20px;
 				flex-wrap: wrap;
 
 				.memberCard {
-					width: calc(50% - 20px);
 					box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
-					padding: 40px 20px;
 					display: flex;
 					flex-direction: column;
 					gap: 20px;
@@ -102,31 +98,27 @@
 
 				.block {
 					display: grid;
-					grid-template-columns: 1fr 1fr;
 					width: 100%;
 					align-items: center;
-
-					* {
-						margin: 0;
-					}
 
 					.description {
 						display: flex;
 						flex-direction: column;
 						gap: 20px;
 
-						& > span {
+						h4 {
+							margin: 0;
+						}
+
+						span {
 							color: rgb(75, 85, 99);
 							line-height: 1.8;
 						}
 					}
 
 					img {
-						width: 80%;
-						height: 256px;
 						object-fit: cover;
 						border-radius: 8px;
-						justify-self: flex-end;
 						box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
 					}
 				}
@@ -145,7 +137,6 @@
 				flex-wrap: wrap;
 
 				a {
-					width: calc(25% - 15px);
 					aspect-ratio: 1/1;
 
 					img {
@@ -165,11 +156,14 @@
 
 		footer {
 			background-color: rgb(17, 24, 39);
-			color: #F0FFF0;
 			padding: 40px 0;
 			display: flex;
 			flex-direction: column;
 			gap: 40px;
+
+			*:not(hr, .copyright, .copyright *) {
+				color: #F0FFF0;
+			}
 
 			.links {
 				display: flex;
@@ -179,10 +173,8 @@
 				ul {
 					display: flex;
 					list-style-type: none;
-					gap: 40px;
 
 					a {
-						color: #F0FFF0;
 						text-decoration: none;
 						
 						&:hover {
@@ -204,6 +196,47 @@
 			}
 		}
 
+		@media (min-width: 1024px) {
+			section:not(.introduction) {
+				width: 60%;
+			}
+
+			.ourTeam {
+				.members {
+					gap: 20px;
+
+					.memberCard {
+						width: calc(50% - 20px);
+						padding: 40px 20px;
+					}
+				}
+			}
+			
+			.about {
+				.block {
+					grid-template-columns: 1fr 1fr;
+
+					img {
+						width: 80%;
+						height: 256px;
+						justify-self: flex-end;
+					}
+				}
+			}
+
+			.explore {
+				.pictureDisplay {
+					a {
+						width: calc(25% - 15px);
+					}
+				}
+			}
+
+			footer .links ul {
+				gap: 40px;
+			}
+		}
+
 		@media (max-width: 1024px) and (min-width: 769px) {
 			section:not(.introduction) {
 				width: 80%;
@@ -211,7 +244,6 @@
 
 			.introduction {
 				padding: 100px 40px;
-				text-align: center;
 
 				h1 {
 					font-size: 2.2rem;
@@ -241,6 +273,7 @@
 					img {
 						width: 90%;
 						height: 230px;
+						justify-self: flex-end;
 					}
 				}
 			}
@@ -267,7 +300,6 @@
 
 			.introduction {
 				padding: 80px 20px;
-				text-align: center;
 
 				h1 {
 					font-size: 1.8rem;
@@ -281,23 +313,24 @@
 			.ourTeam {
 				.members {
 					flex-direction: column;
+					gap: 20px;
 
 					.memberCard {
-						width: 100% !important;
+						width: 100%;
+						padding: 40px 20px;
 					}
 				}
 			}
 
 			.about {
 				.block {
-					grid-template-columns: 1fr !important;
+					grid-template-columns: 1fr;
 					gap: 25px;
-					text-align: left;
 
 					img {
-						width: 100% !important;
+						width: 100%;
 						height: 220px;
-						justify-self: normal !important;
+						justify-self: normal;
 						order: 2;
 					}
 
@@ -309,7 +342,7 @@
 
 			.explore {
 				.pictureDisplay {
-							a {
+					a {
 						width: calc(50% - 10px);
 					}
 				}
