@@ -1,20 +1,3 @@
-/* MANDATORY CSS RULES */
-/* A style formatting all <p> (paragraph) tags */
-p {
-	font-family: 'Caviar Dreams', 'Arial', sans-serif;
-	font-size: 18px;
-	color: #F0FFF0;
-}
-
-/* A generic class definition (reused across page elements) */
-.flex-box {
-	display: flex;
-}
-
-/* A tag-specific class (e.g., .header h1 for styling headings within headers) */
-/* header > nav > ul > li > .line */
-/* --- */
-
 /* FONTS */
 @font-face {
 	font-family: 'Caviar Dreams';
@@ -161,7 +144,7 @@ header {
 					bottom: -5px;
 				}
 
-				&:hover {
+				&.link:hover {
 					.line {
 						opacity: 1;
 					}
@@ -174,6 +157,7 @@ header {
 
 /* FOOTER */
 footer {
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 25px;
