@@ -11,10 +11,16 @@ p {
 }
 
 /* A tag-specific class (e.g., .header h1 for styling headings within headers) */
-/* .aboutme-section span .side */
+section.aboutme-section > span .side {
+	display: flex;
+}
 
 /* A class for <a> tags with hover effects (e.g., .link:hover) */
-/* .link:hover */
+.link:hover {
+	.line {
+		opacity: 1;
+	}
+}
 /* --- */
 
 /* ABOUT ME */
@@ -28,8 +34,6 @@ section.aboutme-section {
 		gap: 25px;
 
 		.side {
-			display: flex;
-			
 			.line {
 				width: 2px;
 			}
