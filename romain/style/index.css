@@ -6,12 +6,12 @@ p {
 }
 
 /* A generic class definition (reused across page elements) */
-.flex-box {
+.flexBox {
 	display: flex;
 }
 
 /* A tag-specific class (e.g., .header h1 for styling headings within headers) */
-section.aboutme-section > span .side {
+section.aboutMeSection > span .side {
 	display: flex;
 }
 
@@ -24,7 +24,7 @@ section.aboutme-section > span .side {
 /* --- */
 
 /* ABOUT ME */
-section.aboutme-section {
+section.aboutMeSection {
 	flex-direction: column;
 	gap: 35px;
 	padding: 35px 150px;
@@ -39,12 +39,12 @@ section.aboutme-section {
 			}
 		}
 
-		.main-content {
+		.mainContent {
 			display: flex;
 			flex-direction: column;
 			gap: 25px;
 
-			.top-content {
+			.topContent {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
@@ -52,7 +52,7 @@ section.aboutme-section {
 				gap: 10px;
 				width: 60%;
 
-				.top-content-top {
+				.topContentTop {
 					display: flex;
 					flex-direction: column;
 					align-items: center;
@@ -64,11 +64,11 @@ section.aboutme-section {
 					}
 				}
 
-				.top-content-bottom {
+				.topContentBottom {
 					display: flex;
 					gap: 40px;
 
-					.top-content-right {
+					.topContentRight {
 						display: flex;
 						flex-direction: column;
 						justify-content: center;
@@ -85,7 +85,7 @@ section.aboutme-section {
 				}
 			}
 
-			.written-content {
+			.writtenContent {
 				display: flex;
 				flex-direction: column;
 				gap: 10px;
@@ -95,14 +95,14 @@ section.aboutme-section {
 				}
 
 				.double,
-				.double > span:has(.content-with-image-or-link) {
+				.double > span:has(.contentWithImageOrLink) {
 					gap: 5px;
 					display: flex;
 					flex-direction: column;
 				}
 
 				.double {
-					.content-with-image-or-link {
+					.contentWithImageOrLink {
 						display: flex;
 						align-items: center;
 						gap: 10px;
@@ -119,7 +119,7 @@ section.aboutme-section {
 /* --- */
 
 /* EXPERIENCES */
-section.experiences-section {
+section.experiencesSection {
 	flex-basis: 33%;
 	justify-content: space-between;
 	padding: 35px 150px;
@@ -130,11 +130,11 @@ section.experiences-section {
 		flex-direction: column;
 		text-align: end;
 		
-		.section-title {
+		.sectionTitle {
 			align-self: flex-end;
 		}
 
-		.formations-list {
+		.formationsList {
 			display: flex;
 			flex-direction: column;
 			gap: 25px;
@@ -144,7 +144,7 @@ section.experiences-section {
 				flex-direction: column;
 				gap: 5px;
 
-				.formation-details {
+				.formationDetails {
 					display: flex;
 					justify-content: flex-end;
 					gap: 10px;
@@ -155,26 +155,26 @@ section.experiences-section {
 	/* --- */
 
 	/* WORK EXP */
-	.work-exp {
+	.workExp {
 		display: flex;
 		flex-direction: column;
 
-		.work-experiences {
+		.workExperiences {
 			display: flex;
 			flex-direction: column;
 			gap: 25px;
 
-			.work-experience {
+			.workExperience {
 				display: flex;
 				flex-direction: column;
 				gap: 5px;
 
-				.work-experience-details {
+				.workExperienceDetails {
 					display: flex;
 					gap: 10px;
 				}
 
-				.work-experience-description {
+				.workExperienceDescription {
 					display: flex;
 					flex-direction: column;
 				}
@@ -187,7 +187,7 @@ section.experiences-section {
 
 @media (max-width: 768px) {
 	/* ABOUT ME */
-	section.aboutme-section {
+	section.aboutMeSection {
 		gap: 25px !important;
 		padding: 25px 15px !important;
 
@@ -203,29 +203,29 @@ section.experiences-section {
 				}
 			}
 
-			.main-content {
+			.mainContent {
 				gap: 15px !important;
 
-				.top-content-bottom {
+				.topContentBottom {
 					flex-direction: column;
 					gap: 40px;
 
-					.top-content-right {
+					.topContentRight {
 						gap: 10px;
 					}
 				}
 
-				.written-content {
+				.writtenContent {
 					gap: 10px !important;
 
 					.double {
 						gap: 10px !important;
 
-						> span:has(.content-with-image-or-link) {
+						> span:has(.contentWithImageOrLink) {
 							gap: 2.5px;
 						}
 
-						.content-with-image-or-link {
+						.contentWithImageOrLink {
 							gap: 5px;
 						}
 					}
@@ -236,20 +236,20 @@ section.experiences-section {
 	/* --- */
 	
 	/* EXPERIENCES */
-	section.experiences-section {
+	section.experiencesSection {
 		justify-content: space-between;
 		padding: 15px 15px;
 		gap: 30px;
 
 		/* EDUCATION */
 		.formations {
-			.formations-list {
+			.formationsList {
 				gap: 10px;
 
 				.formation {
 					gap: 2.5px;
 
-					.formation-details {
+					.formationDetails {
 						gap: 5px;
 					}
 				}
@@ -258,14 +258,14 @@ section.experiences-section {
 		/* --- */
 
 		/* WORK EXP */
-		.work-exp {
-			.work-experiences {
+		.workExp {
+			.workExperiences {
 				gap: 10px;
 
-				.work-experience {
+				.workExperience {
 					gap: 2.5px;
 
-					.work-experience-details {
+					.workExperienceDetails {
 						gap: 5px;
 					}
 				}
