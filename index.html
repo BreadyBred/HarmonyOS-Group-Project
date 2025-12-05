@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; background-color: rgb(249, 250, 251);">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +13,13 @@
 
 		/* At least one contextual style (a style applied to a tag nested within another tag) */
 		/* 
-			.introduction {
-				img, .blackCover {
-					position: absolute;
-	 			}
-	 		}
+			.ourTeam {
+				.members {
+					width: 100%;
+					display: flex;
+					flex-wrap: wrap;
+				}
+			}
 		*/
 
 		/* A hover effect for <a> tags */
@@ -29,6 +31,9 @@
 			}
 		*/
 
+		/* Multiple inline CSS styles */
+		/* html, .introduction img, .introduction .blackCover, footer, .links */
+
 		*:not(h4) {
 			margin: 0 auto;
 			box-sizing: border-box;
@@ -36,11 +41,6 @@
 
 		h1, h2, h3, h4 {
 			font-weight: 400;
-		}
-
-		html {
-			font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-			background-color: rgb(249, 250, 251);
 		}
 
 		.introduction {
@@ -52,23 +52,10 @@
 			gap: 20px;
 			color: #F0FFF0;
 
-			img, .blackCover {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				z-index: -1;
-			}
-
 			img {
 				object-fit: cover;
 			}
-
-			.blackCover {
-				background-color: rgba(0, 0, 0, 0.5);
-			}
-		}		
+		}
 
 		.ourTeam {
 			display: flex;
@@ -179,21 +166,11 @@
 		}
 
 		footer {
-			background-color: rgb(17, 24, 39);
-			padding: 40px 0;
-			display: flex;
-			flex-direction: column;
-			gap: 40px;
-
 			*:not(hr, .copyright, .copyright *) {
 				color: #F0FFF0;
 			}
 
 			.links {
-				display: flex;
-				flex-direction: column;
-				gap: 20px;
-
 				ul {
 					display: flex;
 					list-style-type: none;
@@ -388,8 +365,8 @@
 	<section class="introduction">
 		<h2>HarmonyOS Project</h2>
 		<h1>Introduction to Suzhou</h1>
-		<img class="fullPage" src="assets/images/bg.jpg">
-		<div class="blackCover"></div>
+		<img class="fullPage" src="assets/images/bg.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+		<div class="blackCover" style="position: absolute; background-color: rgba(0, 0, 0, 0.5); top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
 	</section>
 
 	<section class="ourTeam">
@@ -447,9 +424,9 @@
 			<a href="https://www.suzhou.gov.cn/"><img src="assets/images/display-4.jpg"></a>
 		</span>
 	</section>
-
-	<footer>
-		<span class="links">
+				
+	<footer style="background-color: rgb(17, 24, 39); padding: 40px 0; display: flex; flex-direction: column; gap: 40px;">
+		<span class="links" style="display: flex; flex-direction: column; gap: 20px;">
 			<h4>External Resources</h4>
 			<ul>
 				<li><a href="https://www.suzhou.gov.cn/">Suzhou Official Website</a></li>
