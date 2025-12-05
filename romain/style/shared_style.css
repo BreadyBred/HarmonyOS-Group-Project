@@ -1,13 +1,18 @@
 /* MANDATORY CSS RULES */
+/* A style formatting all <p> (paragraph) tags */
 p {
 	font-family: 'Caviar Dreams', 'Arial', sans-serif;
 	font-size: 18px;
 	color: #F0FFF0;
 }
 
+/* A generic class definition (reused across page elements) */
 .flex-box {
 	display: flex;
 }
+
+/* A tag-specific class (e.g., .header h1 for styling headings within headers) */
+/* header > nav > ul > li > .line */
 /* --- */
 
 /* FONTS */
