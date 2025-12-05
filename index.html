@@ -158,6 +158,45 @@
 				}
 			}
 		}
+		
+		footer {
+			background-color: rgb(17, 24, 39);
+			color: #F0FFF0;
+			padding: 40px 0;
+			display: flex;
+			flex-direction: column;
+			gap: 40px;
+
+			.links {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+
+				ul {
+					display: flex;
+					list-style-type: none;
+					gap: 40px;
+
+					a {
+						color: #F0FFF0;
+						text-decoration: none;
+						
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+
+			hr {
+				color: #1e2939;
+				width: 70%;
+			}
+
+			.copyright {
+				color: rgb(156, 163, 175);
+			}
+		}
 	</style>
 </head>
 <body>
@@ -213,7 +252,7 @@
 			</span>
 		</span>
 	</section>
-	
+
 	<section class="explore">
 		<h3>Explore Suzhou</h3>
 		<span class="pictureDisplay">
@@ -223,5 +262,21 @@
 			<a href="https://google.com"><img src="assets/images/display-4.jpg"></a>
 		</span>
 	</section>
+
+	<footer>
+		<span class="links">
+			<h4>External Resources</h4>
+			<ul>
+				<li><a href="https://google.com">Suzhou Official Website</a></li>
+				<li><a href="https://google.com">Wikipedia</a></li>
+				<li><a href="https://google.com">Travel Guide</a></li>
+				<li><a href="https://google.com">UNESCO World Heritage</a></li>
+			</ul>
+		</span>
+		<hr>
+		<span class="copyright">
+			<span>© 2025 - Harmony OS Project</span>
+		</span>
+	</footer>
 </body>
 </html>
