@@ -132,6 +132,32 @@
 				}
 			}
 		}
+
+		.explore {
+			display: flex;
+			flex-direction: column;
+			padding: 40px 0;
+			gap: 40px;
+
+			.pictureDisplay {
+				display: flex;
+				gap: 15px;
+				flex-wrap: wrap;
+
+				a {
+					width: calc(25% - 15px);
+					overflow: hidden;
+					aspect-ratio: 1/1;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						border-radius: 8px;
+					}
+				}
+			}
+		}
 	</style>
 </head>
 <body>
@@ -167,7 +193,7 @@
 			</span>
 		</span>
 	</section>
-	
+
 	<section class="about">
 		<h3>About Suzhou</h3>
 		<span class="aboutContent">
@@ -185,6 +211,16 @@
 				</span>
 				<img src="assets/images/display-2.jpg">
 			</span>
+		</span>
+	</section>
+	
+	<section class="explore">
+		<h3>Explore Suzhou</h3>
+		<span class="pictureDisplay">
+			<a href="https://google.com"><img src="assets/images/display-1.jpg"></a>
+			<a href="https://google.com"><img src="assets/images/display-2.jpg"></a>
+			<a href="https://google.com"><img src="assets/images/display-3.jpg"></a>
+			<a href="https://google.com"><img src="assets/images/display-4.jpg"></a>
 		</span>
 	</section>
 </body>
