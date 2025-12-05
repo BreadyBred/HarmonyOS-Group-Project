@@ -89,6 +89,49 @@
 				}
 			}
 		}
+
+		.about {
+			display: flex;
+			flex-direction: column;
+			padding: 40px 0;
+			gap: 40px;
+
+			.aboutContent {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+
+				.block {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					width: 100%;
+					align-items: center;
+
+					* {
+						margin: 0;
+					}
+
+					.description {
+						display: flex;
+						flex-direction: column;
+						gap: 20px;
+
+						& > span {
+							color: rgb(75, 85, 99);
+							line-height: 1.8;
+						}
+					}
+
+					img {
+						width: 80%;
+						height: 256px;
+						object-fit: cover;
+						border-radius: 8px;
+						justify-self: flex-end;
+					}
+				}
+			}
+		}
 	</style>
 </head>
 <body>
@@ -98,7 +141,7 @@
 		<img class="fullPage" src="assets/images/bg.jpg">
 		<div class="blackCover"></div>
 	</section>
-	
+
 	<section class="ourTeam">
 		<h3>Our Team</h3>
 		<span class="members">
@@ -121,6 +164,26 @@
 				<span class="memberName">Noah</span>
 				<span class="memberID">Student ID: XX</span>
 				<span class="memberLink"><a href="noah/index.html">Visit Homepage →</a></span>
+			</span>
+		</span>
+	</section>
+	
+	<section class="about">
+		<h3>About Suzhou</h3>
+		<span class="aboutContent">
+			<span class="firstBlock block">
+				<span class="description">
+					<h4>Location & Demographics</h4>
+					<span>Suzhou is a major city in Jiangsu Province, China, located on the lower reaches of the Yangtze River and the shores of Lake Tai. With a population of over 12 million in its metropolitan area, Suzhou is one of the most prosperous cities in China, known for its rich history spanning over 2,500 years.</span>
+				</span>
+				<img src="assets/images/display-1.jpg">
+			</span>
+			<span class="secondBlock block">
+				<span class="description">
+					<h4>Culture, Cuisine & Scenery</h4>
+					<span>Suzhou is renowned for its classical Chinese gardens, traditional water towns, and silk production. The city's cuisine is characterized by sweet and delicate flavors, featuring dishes like sweet and sour mandarin fish and biluochun tea. The picturesque canals, ancient bridges, and meticulously designed gardens make Suzhou one of China's most beautiful cities.</span>
+				</span>
+				<img src="assets/images/display-2.jpg">
 			</span>
 		</span>
 	</section>
