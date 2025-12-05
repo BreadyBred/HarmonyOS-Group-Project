@@ -1,14 +1,5 @@
-/* MANDATORY CSS RULES */
-p {
-	font-family: 'Caviar Dreams', 'Arial', sans-serif;
-	font-size: 18px;
-	color: #F0FFF0;
-}
-/* --- */
-
 /* ABOUT ME */
 section.aboutme-section {
-	display: flex;
 	flex-direction: column;
 	gap: 35px;
 	padding: 35px 150px;
@@ -106,7 +97,6 @@ section.aboutme-section {
 
 /* EXPERIENCES */
 section.experiences-section {
-	display: flex;
 	flex-basis: 33%;
 	justify-content: space-between;
 	padding: 35px 150px;
