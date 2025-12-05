@@ -1,0 +1,256 @@
+/* ABOUT ME */
+section.aboutme-section {
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+	padding: 35px 150px;
+
+	> span {
+		display: flex;
+		gap: 25px;
+
+		.side {
+			display: flex;
+			
+			.line {
+				width: 2px;
+			}
+		}
+
+		.main-content {
+			display: flex;
+			flex-direction: column;
+			gap: 25px;
+
+			.top-content {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-self: center;
+				gap: 10px;
+				width: 60%;
+
+				.top-content-top {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					gap: 10px;
+					
+					hr {
+						width: 100%;
+						border: 1px solid #F0F3BD;
+					}
+				}
+
+				.top-content-bottom {
+					display: flex;
+					gap: 40px;
+
+					.top-content-right {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						gap: 10px;
+					}
+
+					img {
+						max-width: 250px;
+						border-radius: 10px;
+						margin: 10px 0;
+						height: fit-content
+					}
+				}
+			}
+
+			.written-content {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+
+				> span:not(.double) {
+					display: flex;
+				}
+
+				.double,
+				.double > span:has(.content-with-image-or-link) {
+					gap: 5px;
+					display: flex;
+					flex-direction: column;
+				}
+
+				.double {
+					.content-with-image-or-link {
+						display: flex;
+						align-items: center;
+						gap: 10px;
+
+						img {
+							width: 35px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* --- */
+
+/* EXPERIENCES */
+section.experiences-section {
+	display: flex;
+	flex-basis: 33%;
+	justify-content: space-between;
+	padding: 35px 150px;
+
+	/* EDUCATION */
+	.formations {
+		display: flex;
+		flex-direction: column;
+		text-align: end;
+		
+		.section-title {
+			align-self: flex-end;
+		}
+
+		.formations-list {
+			display: flex;
+			flex-direction: column;
+			gap: 25px;
+
+			.formation {
+				display: flex;
+				flex-direction: column;
+				gap: 5px;
+
+				.formation-details {
+					display: flex;
+					justify-content: flex-end;
+					gap: 10px;
+				}
+			}
+		}
+	}
+	/* --- */
+
+	/* WORK EXP */
+	.work-exp {
+		display: flex;
+		flex-direction: column;
+
+		.work-experiences {
+			display: flex;
+			flex-direction: column;
+			gap: 25px;
+
+			.work-experience {
+				display: flex;
+				flex-direction: column;
+				gap: 5px;
+
+				.work-experience-details {
+					display: flex;
+					gap: 10px;
+				}
+
+				.work-experience-description {
+					display: flex;
+					flex-direction: column;
+				}
+			}
+		}
+	}
+	/* --- */
+}
+/* --- */
+
+@media (max-width: 768px) {
+	/* ABOUT ME */
+	section.aboutme-section {
+		gap: 25px !important;
+		padding: 25px 15px !important;
+
+		> span {
+			gap: 10px;
+			flex-direction: column !important;
+
+			.side {
+				flex-direction: column !important;
+
+				.line {
+					height: 1px !important;
+				}
+			}
+
+			.main-content {
+				gap: 15px !important;
+
+				.top-content-bottom {
+					flex-direction: column;
+					gap: 40px;
+
+					.top-content-right {
+						gap: 10px;
+					}
+				}
+
+				.written-content {
+					gap: 10px !important;
+
+					.double {
+						gap: 10px !important;
+
+						> span:has(.content-with-image-or-link) {
+							gap: 2.5px;
+						}
+
+						.content-with-image-or-link {
+							gap: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	/* --- */
+	
+	/* EXPERIENCES */
+	section.experiences-section {
+		justify-content: space-between;
+		padding: 15px 15px;
+		gap: 30px;
+
+		/* EDUCATION */
+		.formations {
+			.formations-list {
+				gap: 10px;
+
+				.formation {
+					gap: 2.5px;
+
+					.formation-details {
+						gap: 5px;
+					}
+				}
+			}
+		}
+		/* --- */
+
+		/* WORK EXP */
+		.work-exp {
+			.work-experiences {
+				gap: 10px;
+
+				.work-experience {
+					gap: 2.5px;
+
+					.work-experience-details {
+						gap: 5px;
+					}
+				}
+			}
+		}
+		/* --- */
+	}
+	/* --- */
+}
