@@ -5,6 +5,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Team 11 - Group Page</title>
 	<style>
+		/* At least one shared selector targeting two or more HTML tags */
+		/* .memberCard, .memberName, .memberID, .memberLink, ... */
+
+		/* At least one class-based selector */
+		/* .introduction, ... */
+
+		/* At least one contextual style (a style applied to a tag nested within another tag) */
+		/* 
+			.introduction {
+				img, .blackCover {
+					position: absolute;
+	 			}
+	 		}
+		*/
+
+		/* A hover effect for <a> tags */
+		/*
+			.memberLink a {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		*/
+
 		*:not(h4) {
 			margin: 0 auto;
 			box-sizing: border-box;
