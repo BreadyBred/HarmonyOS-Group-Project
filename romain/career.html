@@ -12,22 +12,18 @@
 	section.hardSkills {
 		display: flex;
 		flex-direction: column;
-		padding: 35px 150px;
 
 		.skills {
 			display: flex;
 			flex-direction: column;
-			gap: 25px;
 
 			.category {
 				display: flex;
 				flex-direction: column;
-				gap: 10px;
 
 				.categorisedSkills {
 					display: flex;
 					flex-wrap: wrap;
-					gap: 10px;
 				}
 			}
 		}
@@ -38,28 +34,23 @@
 	section.softSkills {
 		display: flex;
 		flex-direction: column;
-		padding: 35px 150px;
 
 		.skills {
 			display: flex;
 			flex-direction: column;
-			gap: 20px;
 
 			.category {
 				display: flex;
 				flex-direction: column;
-				gap: 10px;
 
 				.categorisedSkills {
 					display: flex;
 					flex-wrap: wrap;
-					gap: 10px;
 
 					.skillCard {
-						padding: 10px 15px;
 						border: 1px solid var(--aux-bc);
 						border-radius: 8px;
-						font-size: 0.95rem;
+						font-size: 16px;
 						background-color: #508AA8;
 						color: #F0F3BD;
 					}
@@ -73,12 +64,10 @@
 	section.certificates {
 		display: flex;
 		flex-direction: column;
-		padding: 35px 150px;
 
 		.certificatesList {
 			display: flex;
 			flex-direction: column;
-			gap: 8px;
 
 			.certificateItem {
 				display: flex;
@@ -88,10 +77,134 @@
 	}
 	/* --- */
 	
-	@media (max-width: 768px) {
+	@media (min-width: 1024px) {
+		body > p {
+			margin: 20px 150px 0 150px; 
+		}
+
 		/* HARD SKILLS */
 		section.hardSkills {
-			padding: 15px 15px;
+			padding: 20px 150px;
+
+			.skills {
+				gap: 25px;
+
+				.category {
+					gap: 10px;
+
+					.categorisedSkills {
+						gap: 10px;
+					}
+				}
+			}
+		}
+		/* --- */
+
+		/* SOFT SKILLS */
+		section.softSkills {
+			padding: 20px 150px;
+
+			.skills {
+				gap: 20px;
+
+				.category {
+					gap: 10px;
+
+					.categorisedSkills {
+						gap: 10px;
+
+						.skillCard {
+							padding: 10px 15px;
+						}
+					}
+				}
+			}
+		}
+		/* --- */
+
+		/* CERTIFICATES */
+		section.certificates {
+			padding: 20px 150px;
+
+			.certificatesList {
+				gap: 8px;
+
+				.certificateItem {
+					font-size: 18px;
+				}
+			}
+		}
+		/* --- */
+	}
+	
+	@media (max-width: 1024px) and (min-width: 769px) {
+		body > p {
+			margin: 20px 25px 0 25px; 
+		}
+
+		/* HARD SKILLS */
+		section.hardSkills {
+			padding: 20px 25px;
+
+			.skills {
+				gap: 25px;
+
+				.category {
+					gap: 10px;
+
+					.categorisedSkills {
+						gap: 10px;
+					}
+				}
+			}
+		}
+		/* --- */
+
+		/* SOFT SKILLS */
+		section.softSkills {
+			padding: 20px 25px;
+
+			.skills {
+				gap: 20px;
+
+				.category {
+					gap: 10px;
+
+					.categorisedSkills {
+						gap: 10px;
+
+						.skillCard {
+							padding: 10px 15px;
+						}
+					}
+				}
+			}
+		}
+		/* --- */
+
+		/* CERTIFICATES */
+		section.certificates {
+			padding: 20px 25px;
+
+			.certificatesList {
+				gap: 8px;
+
+				.certificateItem {
+					font-size: 18px;
+				}
+			}
+		}
+		/* --- */
+	}
+
+	@media (max-width: 768px) {
+		body > p {
+			margin: 20px 15px 0 15px; 
+		}
+
+		/* HARD SKILLS */
+		section.hardSkills {
+			padding: 15px;
 
 			.skills {
 				gap: 10px;
@@ -109,7 +222,7 @@
 
 		/* SOFT SKILLS */
 		section.softSkills {
-			padding: 15px 15px;
+			padding: 15px;
 
 			.skills {
 				gap: 10px;
@@ -119,6 +232,10 @@
 
 					.categorisedSkills {
 						gap: 5px;
+						
+						.skillCard {
+							padding: 10px 15px;
+						}
 					}
 				}
 			}
@@ -127,7 +244,7 @@
 
 		/* CERTIFICATES */
 		section.certificates {
-			padding: 15px 15px;
+			padding: 15px;
 
 			.certificatesList {
 				gap: 5px;
@@ -144,7 +261,7 @@
 			<a href="" aria-label="Back to the index">
 				<img src="assets/images/logo-256.png" id="mainLogo" alt="">
 			</a>
-			<ul class="desktopOnly">
+			<ul>
 				<li class="link">
 					<a href="../index.html">
 						Team Page
@@ -161,9 +278,8 @@
 		</nav>
 	</header>
 
-	<p style="color:#F0FFF0; font-size:1.05rem; margin:20px 150px 0 150px; line-height:1.6;">
-		My work focuses on building clean, efficient software and developing strong expertise in AI, automation and full-stack development. 
-		I continuously strengthen my technical abilities, improve my problem-solving mindset, and refine the way I design scalable systems.
+	<p style="color:#F0FFF0; font-size:18px; line-height:1.6;">
+		My career goal is to be a versatile software engineer who specializes in AI-driven solutions and full-stack development. Much of my focus has been on writing clean, efficient software that solves real-world problems, maintains high code quality, and is always scalable. I enhance my skills through continuous learning and hands-on projects in machine learning, automation, and modern web technologies. Notably, I work on enhancing my technical capability, including new frameworks and system architecture, as well as my problem-solving mindset and collaborative attitude. My approach marries solid engineering foundations with adaptability to emerging technologies to ensure that I can design robust, maintainable systems to satisfy current needs and also meet future challenges. But beyond the technical skills, I value clear communication, effective teamwork, and the ability to bridge the gap between complex technical concepts and practical business outcomes.
 	</p>
 
 	<!-- SOFT SKILLS -->
@@ -172,12 +288,9 @@
 			<h2 class="title">Soft skills</h2>
 			<span class="vLine aBg">&nbsp;</span>
 		</span>
-		<p style="color:#F0FFF0; font-size:1.05rem; line-height:1.6;">
-			These soft skills reflect how I work in teams and adapt to challenges.
-		</p>
 		<span class="skills">
 			<span class="category">
-				<span class="categoryTitle">Communication & Teamwork</span>
+				<span class="categoryTitle subtitle">Communication & Teamwork</span>
 				<span class="categorisedSkills">
 					<span class="skillCard">Clear communication</span>
 					<span class="skillCard">Team collaboration</span>
@@ -186,7 +299,7 @@
 			</span>
 
 			<span class="category">
-				<span class="categoryTitle">Problem-Solving</span>
+				<span class="categoryTitle subtitle">Problem-Solving</span>
 				<span class="categorisedSkills">
 					<span class="skillCard">Analytical thinking</span>
 					<span class="skillCard">Troubleshooting</span>
@@ -195,7 +308,7 @@
 			</span>
 
 			<span class="category">
-				<span class="categoryTitle">Work Ethic</span>
+				<span class="categoryTitle subtitle">Work Ethic</span>
 				<span class="categorisedSkills">
 					<span class="skillCard">Autonomy</span>
 					<span class="skillCard">Reliability</span>
@@ -214,7 +327,7 @@
 
 		<span class="skills">	
 			<span class="category">
-				<span class="categoryTitle">Web Development</span>
+				<span class="categoryTitle subtitle">Web Development</span>
 				<span class="categorisedSkills">
 					<img class="skill" src="https:/img.shields.io/badge/HTML5-%23508AA8?style=for-the-badge&amp;logo=HTML5&amp;logoColor=F0F3BD" alt="HTML5">
 					<img class="skill" src="https:/img.shields.io/badge/CSS-%23508AA8?style=for-the-badge&amp;logo=CSS&amp;logoColor=F0F3BD" alt="CSS3">
@@ -237,7 +350,7 @@
 				</span>
 			</span>
 			<span class="category">
-				<span class="categoryTitle">Software Engineering</span>
+				<span class="categoryTitle subtitle">Software Engineering</span>
 				<span class="categorisedSkills">
 					<img class="skill" src="https:/img.shields.io/badge/C%23-%23508AA8?style=for-the-badge&amp;logo=Unity&amp;logoColor=F0F3BD" alt="C Sharp">
 					<img class="skill" src="https:/img.shields.io/badge/C-%23508AA8?style=for-the-badge&amp;logo=C&amp;logoColor=F0F3BD" alt="C">
@@ -254,7 +367,7 @@
 				</span>
 			</span>
 			<span class="category">
-				<span class="categoryTitle">AI/Data</span>
+				<span class="categoryTitle subtitle">AI/Data</span>
 				<span class="categorisedSkills">
 					<img class="skill" src="https:/img.shields.io/badge/NumPy-%23508AA8?style=for-the-badge&amp;logo=NumPy&amp;logoColor=F0F3BD" alt="NumPy">
 					<img class="skill" src="https:/img.shields.io/badge/Pandas-%23508AA8?style=for-the-badge&amp;logo=Pandas&amp;logoColor=F0F3BD" alt="Pandas">
@@ -263,7 +376,7 @@
 				</span>
 			</span>
 			<span class="category">
-				<span class="categoryTitle">CMS</span>
+				<span class="categoryTitle subtitle">CMS</span>
 				<span class="categorisedSkills">
 					<img class="skill" src="https:/img.shields.io/badge/Wordpress-%23508AA8?style=for-the-badge&amp;logo=Wordpress&amp;logoColor=F0F3BD" alt="Wordpress">
 					<img class="skill" src="https:/img.shields.io/badge/Shopify-%23508AA8?style=for-the-badge&amp;logo=Shopify&amp;logoColor=F0F3BD" alt="Shopify">
@@ -272,7 +385,7 @@
 				</span>
 			</span>
 			<span class="category">
-				<span class="categoryTitle">Design</span>
+				<span class="categoryTitle subtitle">Design</span>
 				<span class="categorisedSkills">
 					<img class="skill" src="https:/img.shields.io/badge/Figma-%23508AA8?style=for-the-badge&amp;logo=Figma&amp;logoColor=F0F3BD" alt="Figma">
 					<img class="skill" src="https:/img.shields.io/badge/Photoshop-%23508AA8?style=for-the-badge&amp;logo=Photoshop&amp;logoColor=F0F3BD" alt="Photoshop">
@@ -290,9 +403,6 @@
 			<h2 class="title">Certificates</h2>
 			<span class="vLine aBg">&nbsp;</span>
 		</span>
-		<p style="color:#F0FFF0; font-size:1.05rem; line-height:1.6;">
-			Below are the certifications I obtained to strengthen my professional profile.
-		</p>
 		<span class="certificatesList">
 			<span class="certificateItem contentWithImageOrLink">
 				- IELTS : Score 7.5, CEFR C1 (2025)
