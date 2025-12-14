@@ -2,38 +2,40 @@
 
 Each part of the project has **its own assets and style folders**.  
 
-`/project-root`
-`│`
-`├── index.html                  # Team homepage (embedded CSS only)`
-`├── assets/                     # Images used ONLY by the team homepage`
-`│`
-`├── jaber/                      # Jaber’s personal folder`
-`│   ├── index.html              # Personal homepage`
-`│   ├── career.html             # Career skills page`
-`│   ├── style/`
-`│   │   └── style.css           # External CSS for Jaber`
-`│   └── assets/                 # Images for Jaber only`
-`│`
-`├── assmaa/`
-`│   ├── index.html`
-`│   ├── career.html`
-`│   ├── style/`
-`│   │   └── style.css`
-`│   └── assets/`
-`│`
-`├── romain/`
-`│   ├── index.html`
-`│   ├── career.html`
-`│   ├── style/`
-`│   │   └── style.css`
-`│   └── assets/`
-`│`
-`└── noah/`
- `   ├── index.html`
-`    ├── career.html`
-`    ├── style/`
-`    │   └── style.css`
-`    └── assets/`
+<pre>
+/project-root
+│
+├── index.html                  # Team homepage (embedded CSS only)
+├── assets/                     # Images used ONLY by the team homepage
+│
+├── jaber/                      # Jaber’s personal folder
+│   ├── index.html              # Personal homepage
+│   ├── career.html             # Career skills page
+│   ├── style/
+│   │   └── style.css           # External CSS for Jaber
+│   └── assets/                 # Images for Jaber only
+│
+├── assmaa/
+│   ├── index.html
+│   ├── career.html
+│   ├── style/
+│   │   └── style.css
+│   └── assets/
+│
+├── romain/
+│   ├── index.html
+│   ├── career.html
+│   ├── style/
+│   │   └── style.css
+│   └── assets/
+│
+└── noah/
+    ├── index.html
+    ├── career.html
+    ├── style/
+    │   └── style.css
+    └── assets/
+</pre>
 
 ----------
 
@@ -69,13 +71,13 @@ Each part of the project has **its own assets and style folders**.
 # Git Workflow
 
 The group will use **Git** with the following branching strategy:
--   `master` → final stable submission
--   `dev` → integration branch for merging everyone’s work
+-   `dev` → final stable submission
+-   `master` → integration branch for merging everyone’s work
 -   `romain`, `assmaa`, `jaber`, `noah` → personal branches
     
 ✔ Members work **only in their own branch**  
-✔ After finishing a part, they merge **into `dev`**  
-✔ At the end, `dev` merges into `master`
+✔ After finishing a part, they merge **into `master`**  
+✔ At the end, `master` merges into `dev`
 
 ----------
 
