@@ -1,0 +1,104 @@
+/* RESET (soft) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #ffffff);
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 920px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Generic paragraph formatting (REQUIRED) */
+p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+/* Generic reusable class (REQUIRED) */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.08);
+}
+
+/* Header styling (tag-specific class – REQUIRED) */
+.header h1 {
+  color: #1a73e8;
+  font-size: 30px;
+  margin-bottom: 6px;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Image styling */
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #e8f0fe;
+}
+
+/* Links (REQUIRED) */
+.link {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin: 6px 0;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #0b3c91;
+  text-decoration: underline;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Responsive design (REQUIRED) */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px auto;
+    padding: 12px;
+  }
+
+  img {
+    max-width: 120px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+}
