@@ -29,11 +29,11 @@ Each part of the project has **its own assets and style folders**.
 │   │   └── style.css
 │   └── assets/
 │
-└── noah/
-    ├── index.html
-    ├── career.html
-    ├── style/
-    │   └── style.css
+└── noah/                       # Noah’s personal folder
+    ├── index.html              # Personal homepage
+    ├── career.html             # Career skills page
+    ├── styles/                 # Images for Jaber only
+    │   └── styles.css
     └── assets/
 </pre>
 
