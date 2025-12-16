@@ -47,6 +47,13 @@
 			font-weight: 600;
 		}
 
+		section {
+			h3 {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+		}
+
 		.introduction {
 			height: 100vh;
 			display: flex;
@@ -62,9 +69,6 @@
 		}
 
 		.ourTeam {
-			display: flex;
-			flex-direction: column;
-			gap: 40px;
 			padding: 40px 0;
 
 			.members {
@@ -74,9 +78,6 @@
 
 				.memberCard {
 					box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
-					display: flex;
-					flex-direction: column;
-					gap: 20px;
 					background-color: white;
 					border-radius: 8px;
 
@@ -85,6 +86,7 @@
 					}
 
 					.memberID {
+						margin: 20px 0;
 						color: rgb(107, 114, 128);
 					}
 
@@ -101,28 +103,21 @@
 		}
 
 		.about {
-			display: flex;
-			flex-direction: column;
 			padding: 40px 0;
-			gap: 40px;
 
 			.aboutContent {
-				display: flex;
-				flex-direction: column;
-				gap: 20px;
-
 				.block {
 					display: grid;
 					width: 100%;
 					align-items: center;
 
-					.description {
-						display: flex;
-						flex-direction: column;
-						gap: 20px;
+					&:not(:last-of-type) {
+						margin-bottom: 20px;
+					}
 
+					.description {
 						h4 {
-							margin: 0;
+							margin: 0 0 20px 0;
 						}
 
 						span {
@@ -141,10 +136,7 @@
 		}
 
 		.explore {
-			display: flex;
-			flex-direction: column;
 			padding: 40px 0;
-			gap: 40px;
 
 			.pictureDisplay {
 				display: flex;
@@ -198,10 +190,15 @@
 				width: 70%;
 				height: 1px;
 				border: solid 1px #1e2939;
+				margin: 40px 0;
 			}
 
 			.copyright {
 				color: rgb(156, 163, 175);
+
+				p {
+					text-align: center;
+				}
 			}
 		}
 
@@ -389,24 +386,24 @@
 		<h3>Our Team</h3>
 		<span class="members">
 			<span class="memberCard">
-				<span class="memberName">Noah</span>
-				<span class="memberID">Student ID: SL25225010</span>
-				<span class="memberLink"><a href="noah/index.html">Visit Homepage →</a></span>
+				<p class="memberName">Noah</p>
+				<p class="memberID">Student ID: SL25225010</p>
+				<p class="memberLink"><a href="noah/index.html">Visit Homepage →</a></p>
 			</span>
 			<span class="memberCard">
-				<span class="memberName">Jaber</span>
-				<span class="memberID">Student ID: SL25225001</span>
-				<span class="memberLink"><a href="jaber/index.html">Visit Homepage →</a></span>
+				<p class="memberName">Jaber</p>
+				<p class="memberID">Student ID: SL25225001</p>
+				<p class="memberLink"><a href="jaber/index.html">Visit Homepage →</a></p>
 			</span>
 			<span class="memberCard">
-				<span class="memberName">Romain</span>
-				<span class="memberID">Student ID: SL25225008</span>
-				<span class="memberLink"><a href="romain/index.html">Visit Homepage →</a></span>
+				<p class="memberName">Romain</p>
+				<p class="memberID">Student ID: SL25225008</p>
+				<p class="memberLink"><a href="romain/index.html">Visit Homepage →</a></p>
 			</span>
 			<span class="memberCard">
-				<span class="memberName">Assmaa</span>
-				<span class="memberID">Student ID: SL25225009</span>
-				<span class="memberLink"><a href="assmaa/index.html">Visit Homepage →</a></span>
+				<p class="memberName">Assmaa</p>
+				<p class="memberID">Student ID: SL25225009</p>
+				<p class="memberLink"><a href="assmaa/index.html">Visit Homepage →</a></p>
 			</span>
 		</span>
 	</section>
@@ -453,7 +450,7 @@
 		</span>
 	</section>
 				
-	<footer style="background-color: rgb(17, 24, 39); padding: 40px 0; display: flex; flex-direction: column; gap: 40px;">
+	<footer style="background-color: rgb(17, 24, 39); padding: 40px 0;">
 		<span class="links" style="display: flex; flex-direction: column; gap: 20px;">
 			<h4>External Resources</h4>
 			<ul>
@@ -465,7 +462,7 @@
 		</span>
 		<hr>
 		<span class="copyright">
-			<span>© 2025 - Harmony OS Project</span>
+			<p>© 2025 - Harmony OS Project</p>
 		</span>
 	</footer>
 </body>
