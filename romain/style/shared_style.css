@@ -155,6 +155,12 @@ footer {
 }
 /* --- */
 
+/*
+	I implemented responsiveness through different media queries.
+	Screen size < 768px for mobile users, 
+	769px < Screen size < 1024px for tablet,
+	the default style is for desktop (1024px < Screen size).
+*/
 @media (max-width: 1024px) and (min-width: 769px) {
 	.desktopOnly {
 		display: none !important;
