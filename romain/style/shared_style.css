@@ -20,17 +20,13 @@ html {
 	background: #031927;
 }
 
-body {
-	display: flex;
-	flex-direction: column;
-}
-
 a {
 	color: #F0FFF0;
 	text-decoration: none;
 }
 
 .sectionTitle {
+	display: inline-block;
 	width: fit-content;
 }
 /* --- */
@@ -154,9 +150,7 @@ header {
 
 /* FOOTER */
 footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
 	padding: 25px;
 }
 /* --- */
@@ -221,9 +215,6 @@ footer {
 	/* HEADER */
 	header {
 		nav {
-			display: flex;
-			justify-content: center;
-			align-items: center;
 			margin: 5px 15px;
 
 			img {

@@ -25,8 +25,6 @@ section.aboutMeSection > span .side {
 
 /* ABOUT ME */
 section.aboutMeSection {
-	flex-direction: column;
-
 	> span {
 		display: flex;
 
@@ -107,13 +105,7 @@ section.experiencesSection {
 
 	/* EDUCATION */
 	.formations {
-		display: flex;
-		flex-direction: column;
-
 		.formationsList {
-			display: flex;
-			flex-direction: column;
-
 			.formation {
 				display: flex;
 				flex-direction: column;
@@ -128,13 +120,7 @@ section.experiencesSection {
 
 	/* WORK EXP */
 	.workExp {
-		display: flex;
-		flex-direction: column;
-
 		.workExperiences {
-			display: flex;
-			flex-direction: column;
-
 			.workExperience {
 				display: flex;
 				flex-direction: column;
@@ -157,7 +143,6 @@ section.experiencesSection {
 @media (min-width: 1024px) {
 	/* ABOUT ME */
 	section.aboutMeSection {
-		gap: 35px;
 		padding: 35px 150px;
 
 		> span {
@@ -229,9 +214,11 @@ section.experiencesSection {
 			}
 
 			.formationsList {
-				gap: 25px;
-
 				.formation {
+					&:not(:last-of-type) {
+						margin-bottom: 25px;
+					}
+
 					gap: 5px;
 
 					.formationDetails {
@@ -246,9 +233,11 @@ section.experiencesSection {
 		/* WORK EXP */
 		.workExp {
 			.workExperiences {
-				gap: 25px;
-
 				.workExperience {
+					&:not(:last-of-type) {
+						margin-bottom: 25px;
+					}
+
 					gap: 5px;
 
 					.workExperienceDetails {
@@ -265,7 +254,6 @@ section.experiencesSection {
 @media (max-width: 1024px) and (min-width: 769px) {
 	/* ABOUT ME */
 	section.aboutMeSection {
-		gap: 25px;
 		padding: 25px 15px;
 
 		> span {
@@ -348,9 +336,11 @@ section.experiencesSection {
 			}
 
 			.formationsList {
-				gap: 20px;
-
 				.formation {
+					&:not(:last-of-type) {
+						margin-bottom: 20px;
+					}
+
 					gap: 2.5px;
 
 					.formationDetails {
@@ -366,9 +356,11 @@ section.experiencesSection {
 		/* WORK EXP */
 		.workExp {
 			.workExperiences {
-				gap: 20px;
-
 				.workExperience {
+					&:not(:last-of-type) {
+						margin-bottom: 20px;
+					}
+
 					gap: 2.5px;
 
 					.workExperienceDetails {
@@ -386,7 +378,6 @@ section.experiencesSection {
 @media (max-width: 768px) {
 	/* ABOUT ME */
 	section.aboutMeSection {
-		gap: 25px;
 		padding: 25px 15px;
 
 		> span {
@@ -468,9 +459,11 @@ section.experiencesSection {
 			}
 
 			.formationsList {
-				gap: 20px;
-
 				.formation {
+					&:not(:last-of-type) {
+						margin-bottom: 20px;
+					}
+
 					gap: 2.5px;
 
 					.formationDetails {
@@ -486,9 +479,11 @@ section.experiencesSection {
 		/* WORK EXP */
 		.workExp {
 			.workExperiences {
-				gap: 20px;
-
 				.workExperience {
+					&:not(:last-of-type) {
+						margin-bottom: 20px;
+					}
+					
 					gap: 2.5px;
 
 					.workExperienceDetails {
