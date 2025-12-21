@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/shared_style.css">
+	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<title>Romain's Page</title>
+	<style>
+	/* HARD SKILLS */
+	section.hardSkills {
+		display: flex;
+		flex-direction: column;
+
+		.skills {
+			display: flex;
+			flex-direction: column;
+
+			.category {
+				display: flex;
+				flex-direction: column;
+
+				.categorisedSkills {
+					display: flex;
+					flex-wrap: wrap;
+				}
+			}
+		}
+	}
+	/* --- */
+
+	/* SOFT SKILLS */
+	section.softSkills {
+		display: flex;
+		flex-direction: column;
+
+		.skills {
+			display: flex;
+			flex-direction: column;
+
+			.category {
+				display: flex;
+				flex-direction: column;
+
+				.categorisedSkills {
+					display: flex;
+					flex-wrap: wrap;
+
+					.skillCard {
+						border: 1px solid var(--aux-bc);
+						border-radius: 8px;
+						font-size: 16px;
+						background-color: #508AA8;
+						color: #F0F3BD;
+					}
+				}
+			}
+		}
+	}
+	/* --- */
+
+	/* CERTIFICATES */
+	section.certificates {
+		display: flex;
+		flex-direction: column;
+
+		.certificatesList {
+			display: flex;
+			flex-direction: column;
+
+			.certificateItem {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+	/* --- */
+	
+	@media (min-width: 1024px) {
+		body > p {
+			margin: 20px 150px 0 150px; 
+		}
+
+		/* HARD SKILLS */
+		section.hardSkills {
+			padding: 20px 150px;
+
+			.skills {
+				gap: 25px;
+
+				.category {
+					gap: 10px;
+
+					.categorisedSkills {
+						gap: 10px;
+					}
+				}
+			}
+		}
+		/* --- */
+
+		/* SOFT SKILLS */
+		section.softSkills {
+			padding: 20px 150px;
+
+			.skills {
+				gap: 20px;
+
+				.category {
+					gap: 10px;
+
+					.categorisedSkills {
+						gap: 10px;
+
+						.skillCard {
+							padding: 10px 15px;
+						}
+					}
+				}
+			}
+		}
+		/* --- */
+
+		/* CERTIFICATES */
+		section.certificates {
+			padding: 20px 150px;
+
+			.certificatesList {
+				gap: 8px;
+
+				.certificateItem {
+					font-size: 18px;
+				}
+			}
+		}
+		/* --- */
+	}
+	
+	@media (max-width: 1024px) and (min-width: 769px) {
+		body > p {
+			margin: 20px 25px 0 25px; 
+		}
+
+		/* HARD SKILLS */
+		section.hardSkills {
+			padding: 20px 25px;
+
+			.skills {
+				gap: 25px;
+
+				.category {
+					gap: 10px;
+
+					.categorisedSkills {
+						gap: 10px;
+					}
+				}
+			}
+		}
+		/* --- */
+
+		/* SOFT SKILLS */
+		section.softSkills {
+			padding: 20px 25px;
+
+			.skills {
+				gap: 20px;
+
+				.category {
+					gap: 10px;
+
+					.categorisedSkills {
+						gap: 10px;
+
+						.skillCard {
+							padding: 10px 15px;
+						}
+					}
+				}
+			}
+		}
+		/* --- */
+
+		/* CERTIFICATES */
+		section.certificates {
+			padding: 20px 25px;
+
+			.certificatesList {
+				gap: 8px;
+
+				.certificateItem {
+					font-size: 18px;
+				}
+			}
+		}
+		/* --- */
+	}
+
+	@media (max-width: 768px) {
+		body > p {
+			margin: 20px 15px 0 15px; 
+		}
+
+		/* HARD SKILLS */
+		section.hardSkills {
+			padding: 15px;
+
+			.skills {
+				gap: 10px;
+
+				.category {
+					gap: 5px;
+					
+					.categorisedSkills {
+						gap: 5px;
+					}
+				}
+			}
+		}
+		/* --- */
+
+		/* SOFT SKILLS */
+		section.softSkills {
+			padding: 15px;
+
+			.skills {
+				gap: 10px;
+
+				.category {
+					gap: 5px;
+
+					.categorisedSkills {
+						gap: 5px;
+						
+						.skillCard {
+							padding: 10px 15px;
+						}
+					}
+				}
+			}
+		}
+		/* --- */
+
+		/* CERTIFICATES */
+		section.certificates {
+			padding: 15px;
+
+			.certificatesList {
+				gap: 5px;
+			}
+    	}
+		/* --- */
+	}
+	</style>
+</head>
+<body>
+	<!-- HEADER -->
+	<header class="bottomBorder auxBc">
+		<nav>
+			<a href="" aria-label="Back to the index">
+				<img src="assets/images/logo-256.png" id="mainLogo" alt="">
+			</a>
+			<ul>
+				<li class="link">
+					<a href="../index.html">
+						Team Page
+						<span class="line aBg"></span>
+					</a>
+				</li>
+				<li class="link">
+					<a href="index.html">
+						Homepage
+						<span class="line aBg"></span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<p style="color:#F0FFF0; font-size:18px; line-height:1.6;">
+		My career goal is to be a versatile software engineer who specializes in AI-driven solutions and full-stack development. Much of my focus has been on writing clean, efficient software that solves real-world problems, maintains high code quality, and is always scalable. I enhance my skills through continuous learning and hands-on projects in machine learning, automation, and modern web technologies. Notably, I work on enhancing my technical capability, including new frameworks and system architecture, as well as my problem-solving mindset and collaborative attitude. My approach marries solid engineering foundations with adaptability to emerging technologies to ensure that I can design robust, maintainable systems to satisfy current needs and also meet future challenges. But beyond the technical skills, I value clear communication, effective teamwork, and the ability to bridge the gap between complex technical concepts and practical business outcomes.
+	</p>
+
+	<!-- SOFT SKILLS -->
+	<section class="softSkills" id="softSkills">
+		<span class="sectionTitle">
+			<h2 class="title">Soft skills</h2>
+			<span class="vLine aBg">&nbsp;</span>
+		</span>
+		<span class="skills">
+			<span class="category">
+				<span class="categoryTitle subtitle">Communication & Teamwork</span>
+				<span class="categorisedSkills">
+					<span class="skillCard">Clear communication</span>
+					<span class="skillCard">Team collaboration</span>
+					<span class="skillCard">Cross-cultural adaptability</span>
+				</span>
+			</span>
+
+			<span class="category">
+				<span class="categoryTitle subtitle">Problem-Solving</span>
+				<span class="categorisedSkills">
+					<span class="skillCard">Analytical thinking</span>
+					<span class="skillCard">Troubleshooting</span>
+					<span class="skillCard">Creative solutions</span>
+				</span>
+			</span>
+
+			<span class="category">
+				<span class="categoryTitle subtitle">Work Ethic</span>
+				<span class="categorisedSkills">
+					<span class="skillCard">Autonomy</span>
+					<span class="skillCard">Reliability</span>
+					<span class="skillCard">Time management</span>
+				</span>
+			</span>
+		</span>
+	</section>
+	
+	<!-- HARD SKILLS -->
+	<section class="hardSkills" id="hardSkills">
+		<span class="sectionTitle">
+			<h2 class="title">Hard skills</h2>
+			<span class="vLine aBg">&nbsp;</span>
+		</span>
+
+		<span class="skills">	
+			<span class="category">
+				<span class="categoryTitle subtitle">Web Development</span>
+				<span class="categorisedSkills">
+					<img class="skill" src="https:/img.shields.io/badge/HTML5-%23508AA8?style=for-the-badge&amp;logo=HTML5&amp;logoColor=F0F3BD" alt="HTML5">
+					<img class="skill" src="https:/img.shields.io/badge/CSS-%23508AA8?style=for-the-badge&amp;logo=CSS&amp;logoColor=F0F3BD" alt="CSS3">
+					<img class="skill" src="https:/img.shields.io/badge/Tailwind-%23508AA8?style=for-the-badge&amp;logo=TailwindCSS&amp;logoColor=F0F3BD" alt="Tailwind">
+					<img class="skill" src="https:/img.shields.io/badge/SASS-%23508AA8?style=for-the-badge&amp;logo=SASS&amp;logoColor=F0F3BD" alt="SASS">
+					<img class="skill" src="https:/img.shields.io/badge/LESS-%23508AA8?style=for-the-badge&amp;logo=LESS&amp;logoColor=F0F3BD" alt="LESS">
+					<img class="skill" src="https:/img.shields.io/badge/JavaScript-%23508AA8?style=for-the-badge&amp;logo=JavaScript&amp;logoColor=F0F3BD" alt="JavaScript">
+					<img class="skill" src="https:/img.shields.io/badge/jQuery-%23508AA8?style=for-the-badge&amp;logo=jQuery&amp;logoColor=F0F3BD" alt="jQuery">
+					<img class="skill" src="https:/img.shields.io/badge/TypeScript-%23508AA8?style=for-the-badge&amp;logo=TypeScript&amp;logoColor=F0F3BD" alt="TypeScript">
+					<img class="skill" src="https:/img.shields.io/badge/React-%23508AA8?style=for-the-badge&amp;logo=React&amp;logoColor=F0F3BD" alt="React">
+					<img class="skill" src="https:/img.shields.io/badge/NextJS-%23508AA8?style=for-the-badge&amp;logo=Next.JS&amp;logoColor=F0F3BD" alt="NextJS">
+					<img class="skill" src="https:/img.shields.io/badge/ViteJS-%23508AA8?style=for-the-badge&amp;logo=Vite&amp;logoColor=F0F3BD" alt="ViteJS">
+					<img class="skill" src="https:/img.shields.io/badge/PHP-%23508AA8?style=for-the-badge&amp;logo=PHP&amp;logoColor=F0F3BD" alt="PHP">
+					<img class="skill" src="https:/img.shields.io/badge/CodeIgniter-%23508AA8?style=for-the-badge&amp;logo=CodeIgniter&amp;logoColor=F0F3BD" alt="CodeIgniter">
+					<img class="skill" src="https:/img.shields.io/badge/Symfony-%23508AA8?style=for-the-badge&amp;logo=Symfony&amp;logoColor=F0F3BD" alt="Symfony">
+					<img class="skill" src="https:/img.shields.io/badge/MySQL-%23508AA8?style=for-the-badge&amp;logo=MySQL&amp;logoColor=F0F3BD" alt="MySQL">
+					<img class="skill" src="https:/img.shields.io/badge/RESTAPI-%23508AA8?style=for-the-badge&amp;logo=RESTAPI&amp;logoColor=F0F3BD" alt="REST API">
+					<img class="skill" src="https:/img.shields.io/badge/Node.js-%23508AA8?style=for-the-badge&amp;logo=Node.js&amp;logoColor=F0F3BD" alt="Node.js">
+					<img class="skill" src="https:/img.shields.io/badge/Express-%23508AA8?style=for-the-badge&amp;logo=Express&amp;logoColor=F0F3BD" alt="Express">
+				</span>
+			</span>
+			<span class="category">
+				<span class="categoryTitle subtitle">Software Engineering</span>
+				<span class="categorisedSkills">
+					<img class="skill" src="https:/img.shields.io/badge/C%23-%23508AA8?style=for-the-badge&amp;logo=Unity&amp;logoColor=F0F3BD" alt="C Sharp">
+					<img class="skill" src="https:/img.shields.io/badge/C-%23508AA8?style=for-the-badge&amp;logo=C&amp;logoColor=F0F3BD" alt="C">
+					<img class="skill" src="https:/img.shields.io/badge/Python-%23508AA8?style=for-the-badge&amp;logo=Python&amp;logoColor=F0F3BD" alt="Python">
+					<img class="skill" src="https:/img.shields.io/badge/SQL-%23508AA8?style=for-the-badge&amp;logo=MySQL&amp;logoColor=F0F3BD" alt="SQL">
+					<img class="skill" src="https:/img.shields.io/badge/Linux-%23508AA8?style=for-the-badge&amp;logo=Linux&amp;logoColor=F0F3BD" alt="Linux">
+					<img class="skill" src="https:/img.shields.io/badge/Docker-%23508AA8?style=for-the-badge&amp;logo=Docker&amp;logoColor=F0F3BD" alt="Docker">
+					<img class="skill" src="https:/img.shields.io/badge/Git-%23508AA8?style=for-the-badge&amp;logo=Git&amp;logoColor=F0F3BD" alt="Git">
+					<img class="skill" src="https:/img.shields.io/badge/Github-%23508AA8?style=for-the-badge&amp;logo=Github&amp;logoColor=F0F3BD" alt="Github">
+					<img class="skill" src="https:/img.shields.io/badge/CI%2FCD-%23508AA8?style=for-the-badge&amp;logo=github-actions&amp;logoColor=F0F3BD" alt="CI/CD">
+					<img class="skill" src="https:/img.shields.io/badge/.NET-%23508AA8?style=for-the-badge&amp;logo=.NET&amp;logoColor=F0F3BD" alt=".NET">
+					<img class="skill" src="https:/img.shields.io/badge/Bash-%23508AA8?style=for-the-badge&amp;logo=gnubash&amp;logoColor=F0F3BD" alt="Bash">
+					<img class="skill" src="https:/img.shields.io/badge/Yaml-%23508AA8?style=for-the-badge&amp;logo=yaml&amp;logoColor=F0F3BD" alt="Yaml">
+				</span>
+			</span>
+			<span class="category">
+				<span class="categoryTitle subtitle">AI/Data</span>
+				<span class="categorisedSkills">
+					<img class="skill" src="https:/img.shields.io/badge/NumPy-%23508AA8?style=for-the-badge&amp;logo=NumPy&amp;logoColor=F0F3BD" alt="NumPy">
+					<img class="skill" src="https:/img.shields.io/badge/Pandas-%23508AA8?style=for-the-badge&amp;logo=Pandas&amp;logoColor=F0F3BD" alt="Pandas">
+					<img class="skill" src="https:/img.shields.io/badge/scikit--learn-%23508AA8?style=for-the-badge&amp;logo=scikit-learn&amp;logoColor=F0F3BD" alt="Scikit-learn">
+					<img class="skill" src="https:/img.shields.io/badge/Jupyter-%23508AA8?style=for-the-badge&amp;logo=Jupyter&amp;logoColor=F0F3BD" alt="Jupyter">
+				</span>
+			</span>
+			<span class="category">
+				<span class="categoryTitle subtitle">CMS</span>
+				<span class="categorisedSkills">
+					<img class="skill" src="https:/img.shields.io/badge/Wordpress-%23508AA8?style=for-the-badge&amp;logo=Wordpress&amp;logoColor=F0F3BD" alt="Wordpress">
+					<img class="skill" src="https:/img.shields.io/badge/Shopify-%23508AA8?style=for-the-badge&amp;logo=Shopify&amp;logoColor=F0F3BD" alt="Shopify">
+					<img class="skill" src="https:/img.shields.io/badge/Prestashop-%23508AA8?style=for-the-badge&amp;logo=Prestashop&amp;logoColor=F0F3BD" alt="Prestashop">
+					<img class="skill" src="https:/img.shields.io/badge/Drupal-%23508AA8?style=for-the-badge&amp;logo=Drupal&amp;logoColor=F0F3BD" alt="Drupal">
+				</span>
+			</span>
+			<span class="category">
+				<span class="categoryTitle subtitle">Design</span>
+				<span class="categorisedSkills">
+					<img class="skill" src="https:/img.shields.io/badge/Figma-%23508AA8?style=for-the-badge&amp;logo=Figma&amp;logoColor=F0F3BD" alt="Figma">
+					<img class="skill" src="https:/img.shields.io/badge/Photoshop-%23508AA8?style=for-the-badge&amp;logo=Photoshop&amp;logoColor=F0F3BD" alt="Photoshop">
+					<img class="skill" src="https:/img.shields.io/badge/Illustrator-%23508AA8?style=for-the-badge&amp;logo=Illustrator&amp;logoColor=F0F3BD" alt="Illustrator">
+					<img class="skill" src="https:/img.shields.io/badge/UI/UX-%23508AA8?style=for-the-badge&amp;logo=UI/UX&amp;logoColor=F0F3BD" alt="UI/UX">
+					<img class="skill" src="https:/img.shields.io/badge/Responsive Design-%23508AA8?style=for-the-badge&amp;logo=Responsive Design&amp;logoColor=F0F3BD" alt="Responsive Design">
+				</span>
+			</span>
+		</span>
+	</section>
+
+	<!-- CERTIFICATES -->
+	<section class="certificates">
+		<span class="sectionTitle">
+			<h2 class="title">Certificates</h2>
+			<span class="vLine aBg">&nbsp;</span>
+		</span>
+		<span class="certificatesList">
+			<span class="certificateItem contentWithImageOrLink">
+				- IELTS : Score 7.5, CEFR C1 (2025)
+			</span>
+
+			<span class="certificateItem contentWithImageOrLink">
+				- EFSET : Level C1/C2 (2025)
+			</span>
+
+			<span class="certificateItem contentWithImageOrLink">
+				- Opquast : 825 / 1000 (2024)
+			</span>
+		</span>
+	</section>
+
+	<!-- FOOTER -->
+	<footer class="topBorder auxBc"><span>Romain GERARD © 2025</span></footer>
+</body>
+</html>

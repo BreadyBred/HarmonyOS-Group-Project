@@ -1,0 +1,506 @@
+/* MANDATORY EXTERNAL CSS RULES */
+/* A style formatting all <p> (paragraph) tags */
+p {
+	font-size: 18px;
+	color: #F0FFF0;
+}
+
+/* A generic class definition (reused across page elements) */
+.flexBox {
+	display: flex;
+}
+
+/* A tag-specific class (e.g., .header h1 for styling headings within headers) */
+section.aboutMeSection > span .side {
+	display: flex;
+}
+
+/* A class for <a> tags with hover effects (e.g., .link:hover) */
+.link:hover {
+	.line {
+		opacity: 1;
+	}
+}
+/* --- */
+
+/* ABOUT ME */
+section.aboutMeSection {
+	> span {
+		display: flex;
+
+		.mainContent {
+			display: flex;
+			flex-direction: column;
+
+			.topContent {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-self: center;
+
+				.topContentTop {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					
+					hr {
+						border: 1px solid #F0F3BD;
+					}
+				}
+
+				.topContentBottom {
+					display: flex;
+					flex-wrap: wrap;
+
+					.topContentRight {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+					}
+
+					img {
+						max-width: 250px;
+						border-radius: 10px;
+						margin: 10px auto;
+						height: fit-content
+					}
+				}
+			}
+
+			.writtenContent {
+				display: flex;
+				flex-direction: column;
+
+				> span:not(.double) {
+					display: flex;
+				}
+
+				.double,
+				.double > span:has(.contentWithImageOrLink) {
+					display: flex;
+					flex-direction: column;
+				}
+
+				.double {
+					.contentWithImageOrLink {
+						display: flex;
+						align-items: center;
+
+						img {
+							width: 35px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* --- */
+
+/* EXPERIENCES */
+section.experiencesSection {
+	flex-basis: 33%;
+	justify-content: space-between;
+
+	/* EDUCATION */
+	.formations {
+		.formationsList {
+			.formation {
+				display: flex;
+				flex-direction: column;
+
+				.formationDetails {
+					display: flex;
+				}
+			}
+		}
+	}
+	/* --- */
+
+	/* WORK EXP */
+	.workExp {
+		.workExperiences {
+			.workExperience {
+				display: flex;
+				flex-direction: column;
+
+				.workExperienceDetails {
+					display: flex;
+				}
+
+				.workExperienceDescription {
+					display: flex;
+					flex-direction: column;
+				}
+			}
+		}
+	}
+	/* --- */
+}
+/* --- */
+
+
+/*
+	I implemented responsiveness through different media queries.
+	Screen size < 768px for mobile users, 
+	769px < Screen size < 1024px for tablet,
+	1024px < Screen size for desktop.
+*/
+@media (min-width: 1024px) {
+	/* ABOUT ME */
+	section.aboutMeSection {
+		padding: 35px 150px;
+
+		> span {
+			gap: 25px;
+
+			.side {
+				.line {
+					width: 2px;
+				}
+			}
+
+			.mainContent {
+				gap: 25px;
+
+				.topContent {
+					gap: 10px;
+					width: 60%;
+
+					.topContentTop {
+						gap: 10px;
+						
+						hr {
+							width: 100%;
+						}
+					}
+
+					.topContentBottom {
+						gap: 40px;
+
+						.topContentRight {
+							gap: 10px;
+						}
+					}
+				}
+
+				.writtenContent {
+					gap: 10px;
+
+					.double,
+					.double > span:has(.contentWithImageOrLink) {
+						gap: 5px;
+					}
+
+					.double {
+						.contentWithImageOrLink {
+							gap: 10px;
+
+							img {
+								width: 35px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	/* --- */
+
+	/* EXPERIENCES */
+	section.experiencesSection {
+		padding: 35px 150px;
+
+		/* EDUCATION */
+		.formations {
+			text-align: end;
+			
+			.sectionTitle {
+				align-self: flex-end;
+			}
+
+			.formationsList {
+				.formation {
+					&:not(:last-of-type) {
+						margin-bottom: 25px;
+					}
+
+					gap: 5px;
+
+					.formationDetails {
+						justify-content: flex-end;
+						gap: 10px;
+					}
+				}
+			}
+		}
+		/* --- */
+
+		/* WORK EXP */
+		.workExp {
+			.workExperiences {
+				.workExperience {
+					&:not(:last-of-type) {
+						margin-bottom: 25px;
+					}
+
+					gap: 5px;
+
+					.workExperienceDetails {
+						gap: 10px;
+					}
+				}
+			}
+		}
+		/* --- */
+	}
+	/* --- */
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+	/* ABOUT ME */
+	section.aboutMeSection {
+		padding: 25px 15px;
+
+		> span {
+			gap: 10px;
+			flex-direction: column;
+
+			.side {
+				flex-direction: column;
+
+				.line {
+					height: 1px;
+				}
+			}
+
+			.mainContent {
+				gap: 15px;
+
+				.topContent {
+					width: 100%;
+
+					.topContentTop {
+						hr {
+							width: 60%;
+							margin: 10px 0;
+						}
+					}
+
+					.topContentBottom {
+						flex-direction: column;
+						gap: 10px;
+
+						img {
+							align-self: center;
+						}
+
+						.topContentRight {
+							gap: 10px;
+						}
+					}
+				}
+
+				.writtenContent {
+					gap: 10px;
+
+					span:not(.double) {
+						flex-direction: column;
+						gap: 10px;
+					}
+
+					.double {
+						gap: 10px;
+
+						> span:has(.contentWithImageOrLink) {
+							gap: 2.5px;
+						}
+
+						.contentWithImageOrLink {
+							gap: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	/* --- */
+	
+	/* EXPERIENCES */
+	section.experiencesSection {
+		justify-content: space-between;
+		flex-direction: column;
+		padding: 15px 15px;
+		gap: 30px;
+
+		/* EDUCATION */
+		.formations {
+			text-align: start;
+
+			.sectionTitle {
+				align-self: flex-start;
+			}
+
+			.formationsList {
+				.formation {
+					&:not(:last-of-type) {
+						margin-bottom: 20px;
+					}
+
+					gap: 2.5px;
+
+					.formationDetails {
+						justify-content: flex-start;
+						flex-direction: column;
+						gap: 5px;
+					}
+				}
+			}
+		}
+		/* --- */
+
+		/* WORK EXP */
+		.workExp {
+			.workExperiences {
+				.workExperience {
+					&:not(:last-of-type) {
+						margin-bottom: 20px;
+					}
+
+					gap: 2.5px;
+
+					.workExperienceDetails {
+						flex-direction: column;
+						gap: 5px;
+					}
+				}
+			}
+		}
+		/* --- */
+	}
+	/* --- */
+}
+
+@media (max-width: 768px) {
+	/* ABOUT ME */
+	section.aboutMeSection {
+		padding: 25px 15px;
+
+		> span {
+			gap: 10px;
+			flex-direction: column;
+
+			.side {
+				flex-direction: column;
+
+				.line {
+					height: 1px;
+				}
+			}
+
+			.mainContent {
+				gap: 15px;
+
+				.topContent {
+					width: 100%;
+
+					.topContentTop {
+						hr {
+							width: 60%
+						}
+					}
+
+					.topContentBottom {
+						flex-direction: column;
+						gap: 40px;
+
+						img {
+							align-self: center;
+						}
+
+						.topContentRight {
+							gap: 10px;
+						}
+					}
+				}
+
+				.writtenContent {
+					gap: 10px;
+
+					span:not(.double) {
+						flex-direction: column;
+						gap: 10px;
+					}
+
+					.double {
+						gap: 10px;
+
+						> span:has(.contentWithImageOrLink) {
+							gap: 2.5px;
+						}
+
+						.contentWithImageOrLink {
+							gap: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	/* --- */
+
+	/* EXPERIENCES */
+	section.experiencesSection {
+		justify-content: space-between;
+		flex-direction: column;
+		padding: 15px 15px;
+		gap: 30px;
+
+		/* EDUCATION */
+		.formations {
+			text-align: start;
+
+			.sectionTitle {
+				align-self: flex-start;
+			}
+
+			.formationsList {
+				.formation {
+					&:not(:last-of-type) {
+						margin-bottom: 20px;
+					}
+
+					gap: 2.5px;
+
+					.formationDetails {
+						justify-content: flex-start;
+						flex-direction: column;
+						gap: 5px;
+					}
+				}
+			}
+		}
+		/* --- */
+
+		/* WORK EXP */
+		.workExp {
+			.workExperiences {
+				.workExperience {
+					&:not(:last-of-type) {
+						margin-bottom: 20px;
+					}
+					
+					gap: 2.5px;
+
+					.workExperienceDetails {
+						flex-direction: column;
+						gap: 5px;
+					}
+				}
+			}
+		}
+		/* --- */
+	}
+	/* --- */
+}
