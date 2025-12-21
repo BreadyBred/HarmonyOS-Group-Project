@@ -12,7 +12,6 @@ p {
 	margin-bottom: 16px;
 }
 
-/* Generic class */
 .box {
 	background: white;
 	padding: 20px;
@@ -20,7 +19,6 @@ p {
 	box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Tag-specific selector */
 .header h1 {
 	font-size: 1.8rem;
 	margin: 0;
@@ -38,12 +36,10 @@ p {
 	text-decoration: underline;
 }
 
-/* Layout */
 .header {
 	display: flex;
 	gap: 20px;
 	align-items: center;
-	/* Base layout styles designed for desktop-first responsiveness */
 	max-width: 900px;
 	margin: 30px auto;
 }
@@ -62,7 +58,6 @@ p {
 }
 
 .container {
-	/* Centered container with flexible width to adapt across screen sizes */
 	max-width: 900px;
 	margin: 0 auto 40px auto;
 	padding: 0 15px;
@@ -99,7 +94,6 @@ p {
 	color: #888;
 }
 
-/* Responsive using media queries for phones (<768px) and smaller (<480px) */
 @media (max-width: 768px) {
 	.header {
 		flex-direction: column;
