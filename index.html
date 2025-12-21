@@ -5,46 +5,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Team 11 - Group Page</title>
 	<style>
-		/* At least one shared selector targeting two or more HTML tags */
-		/* .memberCard, .memberName, .memberID, .memberLink, ... */
-
-		/* At least one class-based selector */
-		/* .introduction, ... */
-
-		/* At least one contextual style (a style applied to a tag nested within another tag) */
-		/* 
-			.ourTeam {
-				.members {
-					width: 100%;
-					display: flex;
-					flex-wrap: wrap;
-				}
-			}
-		*/
-
-		/* A hover effect for <a> tags */
-		/*
-			.memberLink a {
-				&:hover {
-					text-decoration: underline;
-				}
-			}
-		*/
-
-		/* Multiple inline CSS styles */
-		/* html, .introduction img, .introduction .blackCover, footer, .links */
-
 		*:not(h4) {
 			margin: 0 auto;
 			box-sizing: border-box;
 		}
 
-		h1, h2, h4 {
+		h1, h2 {
 			font-weight: 400;
+			text-align: center;
 		}
 
 		h3 {
+			font-weight: 700;
+		}
+
+		h4 {
 			font-weight: 600;
+		}
+
+		section {
+			h3 {
+				text-align: center;
+				margin-bottom: 40px;
+			}
 		}
 
 		.introduction {
@@ -62,9 +45,6 @@
 		}
 
 		.ourTeam {
-			display: flex;
-			flex-direction: column;
-			gap: 40px;
 			padding: 40px 0;
 
 			.members {
@@ -74,9 +54,6 @@
 
 				.memberCard {
 					box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
-					display: flex;
-					flex-direction: column;
-					gap: 20px;
 					background-color: white;
 					border-radius: 8px;
 
@@ -85,6 +62,7 @@
 					}
 
 					.memberID {
+						margin: 20px 0;
 						color: rgb(107, 114, 128);
 					}
 
@@ -101,28 +79,21 @@
 		}
 
 		.about {
-			display: flex;
-			flex-direction: column;
 			padding: 40px 0;
-			gap: 40px;
 
 			.aboutContent {
-				display: flex;
-				flex-direction: column;
-				gap: 20px;
-
 				.block {
 					display: grid;
 					width: 100%;
 					align-items: center;
 
-					.description {
-						display: flex;
-						flex-direction: column;
-						gap: 20px;
+					&:not(:last-of-type) {
+						margin-bottom: 20px;
+					}
 
+					.description {
 						h4 {
-							margin: 0;
+							margin: 0 0 20px 0;
 						}
 
 						span {
@@ -141,10 +112,7 @@
 		}
 
 		.explore {
-			display: flex;
-			flex-direction: column;
 			padding: 40px 0;
-			gap: 40px;
 
 			.pictureDisplay {
 				display: flex;
@@ -198,16 +166,31 @@
 				width: 70%;
 				height: 1px;
 				border: solid 1px #1e2939;
+				margin: 40px auto;
 			}
 
 			.copyright {
 				color: rgb(156, 163, 175);
+
+				p {
+					text-align: center;
+				}
 			}
 		}
 
 		@media (min-width: 1024px) {
 			section:not(.introduction) {
 				width: 60%;
+			}
+
+			.introduction {
+				h1 {
+					font-size: 35px;
+				}
+
+				h2 {
+					font-size: 24px;
+				}
 			}
 
 			.ourTeam {
@@ -254,14 +237,12 @@
 			}
 
 			.introduction {
-				padding: 100px 40px;
-
 				h1 {
 					font-size: 35px;
 				}
 
 				h2 {
-					font-size: 21px;
+					font-size: 24px;
 				}
 			}
 
@@ -313,14 +294,12 @@
 			}
 
 			.introduction {
-				padding: 80px 20px;
-
 				h1 {
 					font-size: 29px;
 				}
 
 				h2 {
-					font-size: 29px;
+					font-size: 18px;
 				}
 			}
 
@@ -379,9 +358,9 @@
 </head>
 <body>
 	<section class="introduction">
-		<h2>HarmonyOS Project</h2>
 		<h1>Introduction to Suzhou</h1>
-		<img class="fullPage" src="assets/images/bg.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;" alt="Introduction illustration">
+		<h2>The City of Gardens and Silk</h2>
+		<img class="fullPage" src="assets/images/suzhou.jpg" alt="Introduction Background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
 		<div class="blackCover" style="position: absolute; background-color: rgba(0, 0, 0, 0.5); top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
 	</section>
 
@@ -389,24 +368,24 @@
 		<h3>Our Team</h3>
 		<span class="members">
 			<span class="memberCard">
-				<span class="memberName">Noah</span>
-				<span class="memberID">Student ID: SL25225010</span>
-				<span class="memberLink"><a href="noah/index.html">Visit Homepage →</a></span>
+				<p class="memberName">Noah</p>
+				<p class="memberID">Student ID: SL25225010</p>
+				<p class="memberLink"><a href="noah/index.html">Visit Homepage →</a></p>
 			</span>
 			<span class="memberCard">
-				<span class="memberName">Jaber</span>
-				<span class="memberID">Student ID: SL25225001</span>
-				<span class="memberLink"><a href="jaber/index.html">Visit Homepage →</a></span>
+				<p class="memberName">Jaber</p>
+				<p class="memberID">Student ID: SL25225001</p>
+				<p class="memberLink"><a href="jaber/index.html">Visit Homepage →</a></p>
 			</span>
 			<span class="memberCard">
-				<span class="memberName">Romain</span>
-				<span class="memberID">Student ID: SL25225008</span>
-				<span class="memberLink"><a href="romain/index.html">Visit Homepage →</a></span>
+				<p class="memberName">Romain</p>
+				<p class="memberID">Student ID: SL25225008</p>
+				<p class="memberLink"><a href="romain/index.html">Visit Homepage →</a></p>
 			</span>
 			<span class="memberCard">
-				<span class="memberName">Assmaa</span>
-				<span class="memberID">Student ID: SL25225009</span>
-				<span class="memberLink"><a href="assmaa/index.html">Visit Homepage →</a></span>
+				<p class="memberName">Assmaa</p>
+				<p class="memberID">Student ID: SL25225009</p>
+				<p class="memberLink"><a href="assmaa/index.html">Visit Homepage →</a></p>
 			</span>
 		</span>
 	</section>
@@ -419,7 +398,7 @@
 					<h4>Location & Demographics</h4>
 					<span>Suzhou is a major city in Jiangsu Province, China, located on the lower reaches of the Yangtze River and the shores of Lake Tai. With a population of over 12 million in its metropolitan area, Suzhou is one of the most prosperous cities in China, known for its rich history spanning over 2,500 years.</span>
 				</span>
-				<img src="assets/images/display-1.jpg" alt="">
+				<img src="assets/images/display-9.jpg" alt="">
 			</span>
 			<span class="secondBlock block">
 				<span class="description">
@@ -446,14 +425,14 @@
 	<section class="explore">
 		<h3>Explore Suzhou</h3>
 		<span class="pictureDisplay">
-			<a href="https://en.wikipedia.org/wiki/Classical_Gardens_of_Suzhou"><img src="assets/images/display-1.jpg" alt=""></a>
-			<a href="https://www.chinahighlights.com/suzhou/attraction/"><img src="assets/images/display-2.jpg" alt=""></a>
-			<a href="https://www.travelchinaguide.com/cityguides/jiangsu/suzhou/"><img src="assets/images/display-3.jpg" alt=""></a>
-			<a href="https://www.suzhou.gov.cn/"><img src="assets/images/display-4.jpg" alt=""></a>
+			<a href="https://en.wikipedia.org/wiki/Classical_Gardens_of_Suzhou"><img src="assets/images/display-6.jpg" alt="Classical Gardens of Suzhou Illustration"></a>
+			<a href="https://www.chinahighlights.com/suzhou/attraction/"><img src="assets/images/display-10.jpg" alt=""></a>
+			<a href="https://www.travelchinaguide.com/cityguides/jiangsu/suzhou/"><img src="assets/images/display-7.jpg" alt=""></a>
+			<a href="https://www.suzhou.gov.cn/"><img src="assets/images/display-5.jpg" alt=""></a>
 		</span>
 	</section>
 				
-	<footer style="background-color: rgb(17, 24, 39); padding: 40px 0; display: flex; flex-direction: column; gap: 40px;">
+	<footer style="background-color: rgb(17, 24, 39); padding: 40px 0;">
 		<span class="links" style="display: flex; flex-direction: column; gap: 20px;">
 			<h4>External Resources</h4>
 			<ul>
@@ -465,7 +444,7 @@
 		</span>
 		<hr>
 		<span class="copyright">
-			<span>© 2025 - Harmony OS Project</span>
+			<p>© 2025 - Harmony OS Project</p>
 		</span>
 	</footer>
 </body>
