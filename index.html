@@ -5,35 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Team 11 - Group Page</title>
 	<style>
-		/* At least one shared selector targeting two or more HTML tags */
-		/* .memberCard, .memberName, .memberID, .memberLink, ... */
-
-		/* At least one class-based selector */
-		/* .introduction, ... */
-
-		/* At least one contextual style (a style applied to a tag nested within another tag) */
-		/* 
-			.ourTeam {
-				.members {
-					width: 100%;
-					display: flex;
-					flex-wrap: wrap;
-				}
-			}
-		*/
-
-		/* A hover effect for <a> tags */
-		/*
-			.memberLink a {
-				&:hover {
-					text-decoration: underline;
-				}
-			}
-		*/
-
-		/* Multiple inline CSS styles */
-		/* html, .introduction img, .introduction .blackCover, footer, .links */
-
 		*:not(h4) {
 			margin: 0 auto;
 			box-sizing: border-box;
@@ -41,6 +12,7 @@
 
 		h1, h2 {
 			font-weight: 400;
+			text-align: center;
 		}
 
 		h3 {
@@ -206,14 +178,19 @@
 			}
 		}
 
-		/* I implemented responsiveness through different media queries.
-		Screen size < 768px for mobile users, 
-		769px < Screen size < 1024px for tablet,
-		1024px < Screen size for desktop.
-		*/
 		@media (min-width: 1024px) {
 			section:not(.introduction) {
 				width: 60%;
+			}
+
+			.introduction {
+				h1 {
+					font-size: 35px;
+				}
+
+				h2 {
+					font-size: 24px;
+				}
 			}
 
 			.ourTeam {
@@ -260,14 +237,12 @@
 			}
 
 			.introduction {
-				padding: 100px 40px;
-
 				h1 {
 					font-size: 35px;
 				}
 
 				h2 {
-					font-size: 21px;
+					font-size: 24px;
 				}
 			}
 
@@ -319,14 +294,12 @@
 			}
 
 			.introduction {
-				padding: 80px 20px;
-
 				h1 {
 					font-size: 29px;
 				}
 
 				h2 {
-					font-size: 29px;
+					font-size: 18px;
 				}
 			}
 
