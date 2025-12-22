@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Team 11 - Group Page</title>
 	<style>
-		*:not(h4) {
+		*:not(p, h3, h4, .block, hr) {
 			margin: 0 auto;
 			box-sizing: border-box;
 		}
@@ -23,11 +23,10 @@
 			font-weight: 600;
 		}
 
-		section {
-			h3 {
-				text-align: center;
-				margin-bottom: 40px;
-			}
+		section h3 {
+			text-align: center;
+			margin-top: 0;
+			margin-bottom: 40px;
 		}
 
 		.introduction {
@@ -38,144 +37,137 @@
 			align-items: center;
 			gap: 20px;
 			color: #F0FFF0;
+		}
 
-			img {
-				object-fit: cover;
-			}
+		.introduction img {
+			object-fit: cover;
 		}
 
 		.ourTeam {
 			padding: 40px 0;
+		}
 
-			.members {
-				width: 100%;
-				display: flex;
-				flex-wrap: wrap;
+		.ourTeam .members {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+		}
 
-				.memberCard {
-					box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
-					background-color: white;
-					border-radius: 8px;
+		.ourTeam .members .memberCard {
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+			background-color: white;
+			border-radius: 8px;
+		}
 
-					& > * {
-						margin: 0;
-					}
+		.ourTeam .members .memberCard > *:not(.memberID) {
+			margin: 0;
+		}
 
-					.memberID {
-						margin: 20px 0;
-						color: rgb(107, 114, 128);
-					}
+		.ourTeam .members .memberCard .memberID {
+			margin: 20px 0;
+			color: rgb(107, 114, 128);
+		}
 
-					.memberLink a {
-						color: rgb(37, 99, 235);
-						text-decoration: none;
+		.ourTeam .members .memberCard .memberLink a {
+			color: rgb(37, 99, 235);
+			text-decoration: none;
+		}
 
-						&:hover {
-							text-decoration: underline;
-						}
-					}
-				}
-			}
+		.ourTeam .members .memberCard .memberLink a:hover {
+			text-decoration: underline;
 		}
 
 		.about {
 			padding: 40px 0;
-
-			.aboutContent {
-				.block {
-					display: grid;
-					width: 100%;
-					align-items: center;
-
-					&:not(:last-of-type) {
-						margin-bottom: 20px;
-					}
-
-					.description {
-						h4 {
-							margin: 0 0 20px 0;
-						}
-
-						span {
-							color: rgb(75, 85, 99);
-							line-height: 1.8;
-						}
-					}
-
-					img {
-						object-fit: cover;
-						border-radius: 8px;
-						box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
-					}
-				}
-			}
 		}
+
+		.about .aboutContent .block {
+			display: grid;
+			width: 100%;
+			align-items: center;
+		}
+
+		.about .aboutContent .block:not(:last-of-type) {
+			margin-bottom: 20px;
+		}
+
+		.about .aboutContent .block .description h4 {
+			margin: 0 0 20px 0;
+		}
+
+		.about .aboutContent .block .description span {
+			color: rgb(75, 85, 99);
+			line-height: 1.8;
+		}
+
+		.about .aboutContent .block img {
+			object-fit: cover;
+			border-radius: 8px;
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+		}
+
 
 		.explore {
 			padding: 40px 0;
-
-			.pictureDisplay {
-				display: flex;
-				gap: 15px;
-				flex-wrap: wrap;
-
-				a {
-					aspect-ratio: 1/1;
-
-					img {
-						width: 100%;
-						height: 100%;
-						object-fit: cover;
-						border-radius: 8px;
-						transition: transform 0.3s ease;
-
-						&:hover {
-							transform: scale(1.05);
-						}
-					}
-				}
-			}
 		}
 
-		footer {
-			*:not(hr, .copyright, .copyright *) {
-				color: #F0FFF0;
-			}
+		.explore .pictureDisplay {
+			display: flex;
+			gap: 15px;
+			flex-wrap: wrap;
+		}
 
-			.links {
-				h4 {
-					text-align: center;
-				}
+		.explore .pictureDisplay a {
+			aspect-ratio: 1 / 1;
+		}
 
-				ul {
-					display: flex;
-					list-style-type: none;
+		.explore .pictureDisplay a img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 8px;
+			transition: transform 0.3s ease;
+		}
 
-					a {
-						text-decoration: none;
-						
-						&:hover {
-							text-decoration: underline;
-						}
-					}
-				}
-			}
+		.explore .pictureDisplay a img:hover {
+			transform: scale(1.05);
+		}
 
-			hr {
-				color: #1e2939;
-				width: 70%;
-				height: 1px;
-				border: solid 1px #1e2939;
-				margin: 40px auto;
-			}
+		footer *:not(hr, .copyright, .copyright *) {
+			color: #F0FFF0;
+		}
 
-			.copyright {
-				color: rgb(156, 163, 175);
+		footer .links h4 {
+			text-align: center;
+		}
 
-				p {
-					text-align: center;
-				}
-			}
+		footer .links ul {
+			display: flex;
+			list-style-type: none;
+		}
+
+		footer .links ul a {
+			text-decoration: none;
+		}
+
+		footer .links ul a:hover {
+			text-decoration: underline;
+		}
+
+		footer hr {
+			color: #1e2939;
+			width: 70%;
+			height: 1px;
+			border: solid 1px #1e2939;
+			margin: 40px auto;
+		}
+
+		footer .copyright {
+			color: rgb(156, 163, 175);
+		}
+
+		footer .copyright p {
+			text-align: center;
 		}
 
 		@media (min-width: 1024px) {
@@ -183,47 +175,35 @@
 				width: 60%;
 			}
 
-			.introduction {
-				h1 {
-					font-size: 35px;
-				}
-
-				h2 {
-					font-size: 24px;
-				}
+			.introduction h1 {
+				font-size: 35px;
 			}
 
-			.ourTeam {
-				.members {
-					gap: 20px;
+			.introduction h2 {
+				font-size: 24px;
+			}
 
-					.memberCard {
-						width: calc(50% - 20px);
-						padding: 40px 20px;
-					}
-				}
+			.ourTeam .members {
+				gap: 20px;
+			}
+
+			.ourTeam .members .memberCard {
+				width: calc(50% - 20px);
+				padding: 40px 20px;
 			}
 			
-			.about {
-				.block {
-					&:not(.fullWidth) {
-						grid-template-columns: 1fr 1fr;
-					}
-
-					img {
-						width: 80%;
-						height: 256px;
-						justify-self: flex-end;
-					}
-				}
+			.about .block:not(.fullWidth) {
+				grid-template-columns: 1fr 1fr;
 			}
 
-			.explore {
-				.pictureDisplay {
-					a {
-						width: calc(25% - 15px);
-					}
-				}
+			.about .block img {
+				width: 80%;
+				height: 256px;
+				justify-self: flex-end;
+			}
+
+			.explore .pictureDisplay a {
+				width: calc(25% - 15px);
 			}
 
 			footer .links ul {
@@ -236,55 +216,43 @@
 				width: 80%;
 			}
 
-			.introduction {
-				h1 {
-					font-size: 35px;
-				}
-
-				h2 {
-					font-size: 24px;
-				}
+			.introduction h1 {
+				font-size: 35px;
 			}
 
-			.ourTeam {
-				.members {
-					gap: 30px;
-
-					.memberCard {
-						width: calc(50% - 15px);
-						padding: 30px 20px;
-					}
-				}
+			.introduction h2 {
+				font-size: 24px;
 			}
 
-			.about {
-				.block {
-					gap: 30px;
-
-					&:not(.fullWidth) {
-						grid-template-columns: 1fr 1fr;
-					}
-
-					img {
-						width: 90%;
-						height: 230px;
-						justify-self: flex-end;
-					}
-				}
+			.ourTeam .members {
+				gap: 30px;
 			}
 
-			.explore {
-				.pictureDisplay {
-					a {
-						width: calc(33.33% - 12px);
-					}
-				}
+			.ourTeam .members .memberCard {
+				width: calc(50% - 15px);
+				padding: 30px 20px;
 			}
 
-			footer {
-				ul {
-					gap: 20px;
-				}
+			.about .block {
+				gap: 30px;
+			}
+
+			.about .block:not(.fullWidth) {
+				grid-template-columns: 1fr 1fr;
+			}
+
+			.about .block img {
+				width: 90%;
+				height: 230px;
+				justify-self: flex-end;
+			}
+
+			.explore .pictureDisplay a {
+				width: calc(33.33% - 12px);
+			}
+
+			footer .links ul {
+				gap: 20px;
 			}
 		}
 
@@ -293,65 +261,51 @@
 				width: 90%;
 			}
 
-			.introduction {
-				h1 {
-					font-size: 29px;
-				}
-
-				h2 {
-					font-size: 18px;
-				}
+			.introduction h1 {
+				font-size: 29px;
 			}
 
-			.ourTeam {
-				.members {
-					flex-direction: column;
-					gap: 20px;
-
-					.memberCard {
-						width: 100%;
-						padding: 40px 20px;
-					}
-				}
+			.introduction h2 {
+				font-size: 18px;
 			}
 
-			.about {
-				.block {
-					gap: 25px;
-
-					&:not(.fullWidth) {
-						grid-template-columns: 1fr;
-					}
-
-					img {
-						width: 100%;
-						height: 220px;
-						justify-self: normal;
-						order: 2;
-					}
-
-					.description {
-						order: 1;
-					}
-				}
+			.ourTeam .members {
+				flex-direction: column;
+				gap: 20px;
 			}
 
-			.explore {
-				.pictureDisplay {
-					a {
-						width: calc(50% - 10px);
-					}
-				}
+			.ourTeam .members .memberCard {
+				width: 100%;
+				padding: 40px 20px;
 			}
 
-			footer {
-				.links {
-					ul {
-						flex-direction: column;
-						gap: 15px;
-						padding: 0;
-					}
-				}
+			.about .block {
+				gap: 25px;
+			}
+
+			.about .block:not(.fullWidth) {
+				grid-template-columns: 1fr;
+			}
+
+			.about .block img {
+				width: 100%;
+				height: 220px;
+				justify-self: normal;
+				order: 2;
+			}
+
+			.about .block .description {
+				order: 1;
+			}
+
+			.explore .pictureDisplay a {
+				width: calc(50% - 10px);
+			}
+
+			footer .links ul {
+				flex-direction: column;
+				gap: 15px;
+				padding: 0;
 			}
 		}
 	</style>
@@ -360,8 +314,8 @@
 	<section class="introduction">
 		<h1>Introduction to Suzhou</h1>
 		<h2>The City of Gardens and Silk</h2>
-		<img class="fullPage" src="assets/images/suzhou.jpg" alt="Introduction Background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-		<div class="blackCover" style="position: absolute; background-color: rgba(0, 0, 0, 0.5); top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+		<img src="assets/images/suzhou.jpg" alt="Introduction Background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+		<div  style="position: absolute; background-color: rgba(0, 0, 0, 0.5); top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
 	</section>
 
 	<section class="ourTeam">
